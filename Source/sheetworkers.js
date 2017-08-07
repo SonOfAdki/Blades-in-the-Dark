@@ -424,7 +424,7 @@ const crewData = {
 		cutter: {
 			abilities: ["battleborn", "bodyguard", "ghost_fighter", "leader", "mule", "not_to_be_trifled_with", "savage", "vigorous"],
 			base: {
-				command1: "1",
+				charm1: "1",
 				friends_title: "playbook_cutter_friends_title",
 				gatherinfo1: "gatherinfo_how_can_I_hurt",
 				gatherinfo2: "gatherinfo_whos_most_afraid",
@@ -435,8 +435,8 @@ const crewData = {
 				playbook_description: "playbook_cutter_description",
 				setting_traumata_set: "normal",
 				setting_vice_type: "normal",
-				skirmish1: "1",
-				skirmish2: "1",
+				skulk1: "1",
+				skulk2: "1",
 				xp_condition: "playbook_cutter_xp_condition"
 			},
 			items: [{
@@ -492,12 +492,12 @@ const crewData = {
 				gatherinfo4: "gatherinfo_where_they_vulnerable",
 				gatherinfo5: "gatherinfo_where_did_x_go",
 				gatherinfo6: "gatherinfo_how_can_I_find",
-				hunt1: "1",
-				hunt2: "1",
+				patch1: "1",
+				patch2: "1",
 				playbook_description: "playbook_hound_description",
 				setting_traumata_set: "normal",
 				setting_vice_type: "normal",
-				survey1: "1",
+				reckon1: "1",
 				xp_condition: "playbook_hound_xp_condition"
 			},
 			items: [{
@@ -557,9 +557,9 @@ const crewData = {
 				playbook_description: "playbook_leech_description",
 				setting_traumata_set: "normal",
 				setting_vice_type: "normal",
-				tinker1: "1",
-				tinker2: "1",
-				wreck1: "1",
+				scan1: "1",
+				scan2: "1",
+				finesse1: "1",
 				xp_condition: "playbook_leech_xp_condition"
 			},
 			items: [{
@@ -588,7 +588,7 @@ const crewData = {
 			abilities: ["infiltrator", "ambush", "daredevil", "the_devil's_footsteps", "expertise", "ghost_veil", "reflexes", "shadow"],
 			base: {
 				friends_title: "playbook_lurk_friends_title",
-				finesse1: "1",
+				blast1: "1",
 				gatherinfo1: "gatherinfo_what_do_they_intend",
 				gatherinfo2: "gatherinfo_how_can_I_get_them",
 				gatherinfo3: "gatherinfo_what_should_I_look",
@@ -596,8 +596,8 @@ const crewData = {
 				gatherinfo5: "gatherinfo_where_can_I_hide",
 				gatherinfo6: "gatherinfo_how_can_I_find",
 				playbook_description: "playbook_lurk_description",
-				prowl1: "1",
-				prowl2: "1",
+				brawl1: "1",
+				brawl2: "1",
 				setting_traumata_set: "normal",
 				setting_vice_type: "normal",
 				xp_condition: "playbook_lurk_xp_condition"
@@ -628,7 +628,7 @@ const crewData = {
 			abilities: ["rook's_gambit", "cloak_&_dagger", "ghost_voice", "like_looking_into_a_mirror", "a_little_something_on_the_side", "mesmerism", "subterfuge", "trust_in_me"],
 			base: {
 				friends_title: "playbook_slide_friends_title",
-				consort1: "1",
+				command1: "1",
 				gatherinfo1: "gatherinfo_what_do_they_intend",
 				gatherinfo2: "gatherinfo_how_can_I_get_them",
 				gatherinfo3: "gatherinfo_are_they_telling",
@@ -638,8 +638,8 @@ const crewData = {
 				playbook_description: "playbook_slide_description",
 				setting_traumata_set: "normal",
 				setting_vice_type: "normal",
-				sway1: "1",
-				sway2: "1",
+				finesse1: "1",
+				finesse2: "1",
 				xp_condition: "playbook_slide_xp_condition"
 			},
 			items: [{
@@ -668,8 +668,8 @@ const crewData = {
 		spider: {
 			abilities: ["foresight", "calculating", "connected", "functioning_vice", "ghost_contract", "jail_bird", "mastermind", "weaving_the_web"],
 			base: {
-				consort1: "1",
-				consort2: "1",
+				command1: "1",
+				command2: "1",
 				friends_title: "playbook_spider_friends_title",
 				gatherinfo1: "gatherinfo_what_do_they_want",
 				gatherinfo2: "gatherinfo_what_should_I_look",
@@ -680,7 +680,7 @@ const crewData = {
 				playbook_description: "playbook_spider_description",
 				setting_traumata_set: "normal",
 				setting_vice_type: "normal",
-				study1: "1",
+				navigate1: "1",
 				xp_condition: "playbook_spider_xp_condition"
 			},
 			items: [{
@@ -720,7 +720,7 @@ const crewData = {
 				playbook_description: "playbook_whisper_description",
 				setting_traumata_set: "normal",
 				setting_vice_type: "normal",
-				study1: "1",
+				navigate1: "1",
 				xp_condition: "playbook_whisper_xp_condition"
 			},
 			items: [{
@@ -1093,22 +1093,22 @@ const crewData = {
 	},
 	actionData = {
 		insight: [
-			'hunt',
-			'study',
-			'survey',
-			'tinker'
+			'patch',
+			'navigate',
+			'reckon',
+			'scan'
 		],
 		prowess: [
-			'finesse',
-			'prowl',
-			'skirmish',
-			'wreck'
+			'blast',
+			'brawl',
+			'skulk',
+			'vault'
 		],
 		resolve: [
 			'attune',
+			'charm',
 			'command',
-			'consort',
-			'sway'
+			'finesse'
 		]
 	},
 	itemData = [{

@@ -62,13 +62,13 @@
 			</div>
 			<input type="checkbox" class="sheet-hidden sheet-hidediv" name="attr_setting_vice_type" value="hull"/>
 			<div class="sheet-col100">
-				<input type="text" name="attr_hull_functions" data-i18n-placeholder="functions_placeholder" placeholder="to guard — to destroy — to discover — to acquire — to labor at ... that which my master commands."/>
+				<input type="text" name="attr_hull_functions" data-i18n-placeholder="functions_placeholder" placeholder="to guard — to destroy — to discover — to acquire — to labor at ... that which my master charms."/>
 				<label data-i18n="functions">Functions</label>
 				<span class="sheet-italic sheet-viceblurb" data-i18n="hull_viceblurb">Your clockwork body runs on <span class="sheet-smallcaps">electroplasm</span>. Recharge your capacitors by connecting to an industrial-grade generator (downtime action). When you do this, clear 5 <span class="sheet-smallcaps">drain</span>.</span>
 			</div>
 			<input type="checkbox" class="sheet-hidden sheet-hidediv" name="attr_setting_vice_type" value="vampire"/>
 			<div class="sheet-col100">
-				<span class="sheet-italic sheet-viceblurb" data-i18n="vampire_viceblurb">Your <span class="sheet-smallcaps">vice</span> is life essence, consumed from a living human. Use 1 downtime activity to <span class="sheet-bold">hunt</span> prey and indulge your <span class="sheet-bold">vice</span>. Also, when you feed, erase all level 1 harm and mark 4 ticks on your healing clock. This is is the only way you can heal. How do you feed? What telltale sign do you leave on your victims?</span>
+				<span class="sheet-italic sheet-viceblurb" data-i18n="vampire_viceblurb">Your <span class="sheet-smallcaps">vice</span> is life essence, consumed from a living human. Use 1 downtime activity to <span class="sheet-bold">patch</span> prey and indulge your <span class="sheet-bold">vice</span>. Also, when you feed, erase all level 1 harm and mark 4 ticks on your healing clock. This is is the only way you can heal. How do you feed? What telltale sign do you leave on your victims?</span>
 				<button type="roll" class="sheet-vicebutton" value='&{template:bitd}{{charname=@{character_name}}}{{subtitle=^{viceroll1}@{stress}&nbsp;@{setting_stress_label}^{viceroll2}}}{{vice=1}}{{title-vice=1}}{{title=^{vice}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{vice1},@{vice1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{vice2},@{vice2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{vice3},@{vice3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{vice4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{vice1}-@{vice2}-@{vice3}-@{vice4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{vice1}-@{vice2}-@{vice3}-@{vice4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="indulge_vice">Indulge Vice</button>
 			</div>
 		</div>
@@ -819,85 +819,85 @@
 					</div>
 				</div>
 				<div class="sheet-actions sheet-col100">
-					<!-- Hunt -->
+					<!-- Patch -->
 					<div class="sheet-action sheet-col100">
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_hunt1"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_patch1"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_hunt2"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_patch2"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_hunt3"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_patch3"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_hunt4"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_patch4"/>
 							<span></span>
 						</div>
-						<button type="roll" name="roll_hunt" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-hunt=1}}{{title=^{hunt}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{hunt1},@{hunt1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{hunt2},@{hunt2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{hunt3},@{hunt3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{hunt4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{hunt1}-@{hunt2}-@{hunt3}-@{hunt4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{hunt1}-@{hunt2}-@{hunt3}-@{hunt4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="hunt" data-i18n-title="hunt_description" title="Hunt a target; gather information about its location and movements; attack with precision shooting from a distance.">Hunt</button>
+						<button type="roll" name="roll_patch" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-patch=1}}{{title=^{patch}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{patch1},@{patch1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{patch2},@{patch2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{patch3},@{patch3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{patch4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{patch1}-@{patch2}-@{patch3}-@{patch4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{patch1}-@{patch2}-@{patch3}-@{patch4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="patch" data-i18n-title="patch_description" title="Patch up a wounded crewmember or repair your ship; keep the ship running despite damage.">Patch</button>
 					</div>
-					<!-- Study -->
-					<div class="sheet-action sheet-col100"">
-						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_study1"/>
-							<span></span>
-						</div>
-						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_study2"/>
-							<span></span>
-						</div>
-						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_study3"/>
-							<span></span>
-						</div>
-						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_study4"/>
-							<span></span>
-						</div>
-						<button type="roll" name="roll_study" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-study=1}}{{title=^{study}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{study1},@{study1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{study2},@{study2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{study3},@{study3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{study4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{study1}-@{study2}-@{study3}-@{study4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{study1}-@{study2}-@{study3}-@{study4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="study" data-i18n-title="study_description" title="Study a person, document, or item with close scrutiny to gather information and apply knowledge; gain a deeper understanding; do research.">Study</button>
-					</div>
-					<!-- Survey -->
+					<!-- Navigate -->
 					<div class="sheet-action sheet-col100">
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_survey1"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_navigate1"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_survey2"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_navigate2"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_survey3"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_navigate3"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_survey4"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_navigate4"/>
 							<span></span>
 						</div>
-						<button type="roll" name="roll_survey" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-survey=1}}{{title=^{survey}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{survey1},@{survey1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{survey2},@{survey2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{survey3},@{survey3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{survey4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{survey1}-@{survey2}-@{survey3}-@{survey4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{survey1}-@{survey2}-@{survey3}-@{survey4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="survey" data-i18n-title="survey_description" title="Survey a location or situation to understand what's going on; sense trouble before it happens; gather information about opportunities or exploits.">Survey</button>
+						<button type="roll" name="roll_navigate" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-navigate=1}}{{title=^{navigate}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{navigate1},@{navigate1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{navigate2},@{navigate2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{navigate3},@{navigate3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{navigate4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{navigate1}-@{navigate2}-@{navigate3}-@{navigate4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{navigate1}-@{navigate2}-@{navigate3}-@{navigate4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="navigate" data-i18n-title="navigate_description" title="Navigate your vessel across the high seas; keep your sense of direction in unfamiliar areas; maneuver your ship in combat and pursue fleeing enemies.">Navigate</button>
 					</div>
-					<!-- Tinker -->
+					<!-- Reckon -->
 					<div class="sheet-action sheet-col100">
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_tinker1"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_reckon1"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_tinker2"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_reckon2"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_tinker3"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_reckon3"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_tinker4"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_reckon4"/>
 							<span></span>
 						</div>
-						<button type="roll" name="roll_tinker" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-tinker=1}}{{title=^{tinker}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{tinker1},@{tinker1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{tinker2},@{tinker2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{tinker3},@{tinker3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{tinker4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{tinker1}-@{tinker2}-@{tinker3}-@{tinker4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{tinker1}-@{tinker2}-@{tinker3}-@{tinker4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="tinker" data-i18n-title="tinker_description" title="Tinker with mechanisms to create, modify, disable, or repair; disable a trap, pick a lock, or crack a safe. Use the ubiquitous clockwork and electroplasmic devices around the city to your advantage.">Tinker</button>
+						<button type="roll" name="roll_reckon" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-reckon=1}}{{title=^{reckon}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{reckon1},@{reckon1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{reckon2},@{reckon2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{reckon3},@{reckon3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{reckon4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{reckon1}-@{reckon2}-@{reckon3}-@{reckon4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{reckon1}-@{reckon2}-@{reckon3}-@{reckon4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="reckon" data-i18n-title="reckon_description" title="Reckon information and problems with intelligence and scrutiny; put two and two together; do research.">Reckon</button>
+					</div>
+					<!-- Scan -->
+					<div class="sheet-action sheet-col100">
+						<div>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_scan1"/>
+							<span></span>
+						</div>
+						<div>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_scan2"/>
+							<span></span>
+						</div>
+						<div>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_scan3"/>
+							<span></span>
+						</div>
+						<div>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_scan4"/>
+							<span></span>
+						</div>
+						<button type="roll" name="roll_scan" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-scan=1}}{{title=^{scan}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{scan1},@{scan1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{scan2},@{scan2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{scan3},@{scan3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{scan4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{scan1}-@{scan2}-@{scan3}-@{scan4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{scan1}-@{scan2}-@{scan3}-@{scan4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="scan" data-i18n-title="scan_description" title="Scan your surroundings for danger; perceive a threat before it strikes; study a document, person or situation.">Scan</button>
 					</div>
 				</div>
 			</div>
@@ -936,85 +936,85 @@
 					</div>
 				</div>
 				<div class="sheet-actions sheet-col100">
-					<!-- Finesse -->
+					<!-- Blast -->
 					<div class="sheet-action sheet-col100">
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_finesse1"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_blast1"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_finesse2"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_blast2"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_finesse3"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_blast3"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_finesse4"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_blast4"/>
 							<span></span>
 						</div>
-						<button type="roll" name="roll_finesse" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-finesse=1}}{{title=^{finesse}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{finesse1},@{finesse1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{finesse2},@{finesse2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{finesse3},@{finesse3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{finesse4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{finesse1}-@{finesse2}-@{finesse3}-@{finesse4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{finesse1}-@{finesse2}-@{finesse3}-@{finesse4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="finesse" data-i18n-title="finesse_description" title="Finesse an item from someone's pocket; employ subtle misdirection or sleight-of-hand; handle a vehicle or a mount.">Finesse</button>
+						<button type="roll" name="roll_blast" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-blast=1}}{{title=^{blast}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{blast1},@{blast1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{blast2},@{blast2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{blast3},@{blast3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{blast4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{blast1}-@{blast2}-@{blast3}-@{blast4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{blast1}-@{blast2}-@{blast3}-@{blast4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="blast" data-i18n-title="blast_description" title="Blast your enemies with cannon-fire, guns, or explosives; break through an obstacle with chaos and force.">Blast</button>
 					</div>
-					<!-- Prowl -->
+					<!-- Brawl -->
 					<div class="sheet-action sheet-col100">
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_prowl1"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_brawl1"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_prowl2"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_brawl2"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_prowl3"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_brawl3"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_prowl4"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_brawl4"/>
 							<span></span>
 						</div>
-						<button type="roll" name="roll_prowl" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-prowl=1}}{{title=^{prowl}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{prowl1},@{prowl1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{prowl2},@{prowl2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{prowl3},@{prowl3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{prowl4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{prowl1}-@{prowl2}-@{prowl3}-@{prowl4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{prowl1}-@{prowl2}-@{prowl3}-@{prowl4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="prowl" data-i18n-title="prowl_description" title="Prowl about unseen and traverse obstacles; climb, swim, run, jump, and tumble. Ambush with close violence — a backstab, throat cutting, black-jack, etc.">Prowl</button>
+						<button type="roll" name="roll_brawl" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-brawl=1}}{{title=^{brawl}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{brawl1},@{brawl1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{brawl2},@{brawl2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{brawl3},@{brawl3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{brawl4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{brawl1}-@{brawl2}-@{brawl3}-@{brawl4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{brawl1}-@{brawl2}-@{brawl3}-@{brawl4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="brawl" data-i18n-title="brawl_description" title="Brawl with an opponent in close quarters; assault or defend a position; hold your own in a melee.">Brawl</button>
 					</div>
-					<!-- Skirmish -->
+					<!-- Skulk -->
 					<div class="sheet-action sheet-col100">
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_skirmish1"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_skulk1"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_skirmish2"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_skulk2"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_skirmish3"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_skulk3"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_skirmish4"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_skulk4"/>
 							<span></span>
 						</div>
-						<button type="roll" name="roll_skirmish" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-skirmish=1}}{{title=^{skirmish}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{skirmish1},@{skirmish1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{skirmish2},@{skirmish2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{skirmish3},@{skirmish3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{skirmish4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{skirmish1}-@{skirmish2}-@{skirmish3}-@{skirmish4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{skirmish1}-@{skirmish2}-@{skirmish3}-@{skirmish4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="skirmish" data-i18n-title="skirmish_description" title="Skirmish with an opponent in close combat; assault or hold a position; brawl and wrestle.">Skirmish</button>
+						<button type="roll" name="roll_skulk" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-skulk=1}}{{title=^{skulk}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{skulk1},@{skulk1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{skulk2},@{skulk2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{skulk3},@{skulk3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{skulk4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{skulk1}-@{skulk2}-@{skulk3}-@{skulk4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{skulk1}-@{skulk2}-@{skulk3}-@{skulk4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="skulk" data-i18n-title="skulk_description" title="Skulk around unseen and undetected; ambush with close violence; get the jump on an unsuspecting foe.">Skulk</button>
 					</div>
-					<!-- Wreck -->
+					<!-- Vault -->
 					<div class="sheet-action sheet-col100">
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_wreck1"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_vault1"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_wreck2"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_vault2"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_wreck3"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_vault3"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_wreck4"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_vault4"/>
 							<span></span>
 						</div>
-						<button type="roll" name="roll_wreck" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-wreck=1}}{{title=^{wreck}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{wreck1},@{wreck1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{wreck2},@{wreck2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{wreck3},@{wreck3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{wreck4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{wreck1}-@{wreck2}-@{wreck3}-@{wreck4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{wreck1}-@{wreck2}-@{wreck3}-@{wreck4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="wreck" data-i18n-title="wreck_description" title="Wreck a place, item, or obstacle with savage force or carefully applied sabotage; breach defenses with force; create distractions and chaos.">Wreck</button>
+						<button type="roll" name="roll_vault" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-vault=1}}{{title=^{vault}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{vault1},@{vault1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{vault2},@{vault2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{vault3},@{vault3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{vault4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{vault1}-@{vault2}-@{vault3}-@{vault4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{vault1}-@{vault2}-@{vault3}-@{vault4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="vault" data-i18n-title="vault_description" title="Vault over obstacles; swing across ropes and climb riggings; perform great athletic feats.">Vault</button>
 					</div>
 				</div>
 			</div>
@@ -1071,9 +1071,29 @@
 							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_attune4"/>
 							<span></span>
 						</div>
-						<button type="roll" name="roll_attune" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-attune=1}}{{title=^{attune}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{attune1},@{attune1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{attune2},@{attune2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{attune3},@{attune3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{attune4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{attune1}-@{attune2}-@{attune3}-@{attune4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{attune1}-@{attune2}-@{attune3}-@{attune4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="attune" data-i18n-title="attune_description" title="Attune to spirits and the ghost field; channel electroplasmic energy; perceive and communicate with ghosts; understand spectrology.">Attune</button>
+						<button type="roll" name="roll_attune" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-attune=1}}{{title=^{attune}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{attune1},@{attune1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{attune2},@{attune2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{attune3},@{attune3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{attune4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{attune1}-@{attune2}-@{attune3}-@{attune4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{attune1}-@{attune2}-@{attune3}-@{attune4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="attune" data-i18n-title="attune_description" title="Attune to the ocean's currents and the dark forces beneath the sea; perceive supernatural entities; read the winds and the tides.">Attune</button>
 					</div>
-					<!-- Command-->
+					<!-- Charm-->
+					<div class="sheet-action sheet-col100">
+						<div>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_charm1"/>
+							<span></span>
+						</div>
+						<div>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_charm2"/>
+							<span></span>
+						</div>
+						<div>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_charm3"/>
+							<span></span>
+						</div>
+						<div>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_charm4"/>
+							<span></span>
+						</div>
+						<button type="roll" name="roll_charm" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-charm=1}}{{title=^{charm}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{charm1},@{charm1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{charm2},@{charm2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{charm3},@{charm3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{charm4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{charm1}-@{charm2}-@{charm3}-@{charm4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{charm1}-@{charm2}-@{charm3}-@{charm4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="charm" data-i18n-title="charm_description" title="Charm someone over to your side of an argument; gain information by consorting with others; change attitudes or behavior with clever manipulation and deception.">Charm</button>
+					</div>
+					<!-- Command -->
 					<div class="sheet-action sheet-col100">
 						<div>
 							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_command1"/>
@@ -1091,47 +1111,27 @@
 							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_command4"/>
 							<span></span>
 						</div>
-						<button type="roll" name="roll_command" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-command=1}}{{title=^{command}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{command1},@{command1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{command2},@{command2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{command3},@{command3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{command4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{command1}-@{command2}-@{command3}-@{command4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{command1}-@{command2}-@{command3}-@{command4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="command" data-i18n-title="command_description" title="Command obedience with your force of personality; intimidate or threaten; lead an action with one of the crew's gangs.">Command</button>
+						<button type="roll" name="roll_command" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-command=1}}{{title=^{command}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{command1},@{command1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{command2},@{command2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{command3},@{command3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{command4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{command1}-@{command2}-@{command3}-@{command4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{command1}-@{command2}-@{command3}-@{command4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="command" data-i18n-title="command_description" title="Command obedience with your force of personality; intimidate or threaten; lead your crew on a mission.">Command</button>
 					</div>
-					<!-- Consort -->
+					<!-- Finesse -->
 					<div class="sheet-action sheet-col100">
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_consort1"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_finesse1"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_consort2"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_finesse2"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_consort3"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_finesse3"/>
 							<span></span>
 						</div>
 						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_consort4"/>
+							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_finesse4"/>
 							<span></span>
 						</div>
-						<button type="roll" name="roll_consort" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-consort=1}}{{title=^{consort}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{consort1},@{consort1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{consort2},@{consort2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{consort3},@{consort3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{consort4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{consort1}-@{consort2}-@{consort3}-@{consort4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{consort1}-@{consort2}-@{consort3}-@{consort4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="consort" data-i18n-title="consort_description" title="Consort with connections from your heritage, background, friends, or rivals to gain access to resources, information, people, or places.">Consort</button>
-					</div>
-					<!-- Sway -->
-					<div class="sheet-action sheet-col100">
-						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_sway1"/>
-							<span></span>
-						</div>
-						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_sway2"/>
-							<span></span>
-						</div>
-						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_sway3"/>
-							<span></span>
-						</div>
-						<div>
-							<input type="checkbox" class="sheet-checkbox sheet-circlebox" value="1" name="attr_sway4"/>
-							<span></span>
-						</div>
-						<button type="roll" name="roll_sway" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-sway=1}}{{title=^{sway}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{sway1},@{sway1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{sway2},@{sway2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{sway3},@{sway3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{sway4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{sway1}-@{sway2}-@{sway3}-@{sway4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{sway1}-@{sway2}-@{sway3}-@{sway4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="sway" data-i18n-title="sway_description" title="Sway someone with charm, logic, deception, disguise, or bluff; change attitudes or behavior with manipulation or seduction.">Sway</button>
+						<button type="roll" name="roll_finesse" class="sheet-rollbutton sheet-actionbutton" value='&{template:bitd}{{action=1}}{{subtitle=^{rolls}}}{{charname=@{character_name}}}{{title-finesse=1}}{{title=^{finesse}}}{{@{position_query}}}{{effect=@{effect_query}}}{{bonusdice=[[@{bonusdice_long}]]}}{{roll1=[[[[{@{finesse1},@{finesse1}+@{bonusdice}}kl1]]d6]]}}{{roll2=[[[[{@{finesse2},@{finesse2}+@{bonusdice}+1}kl1]]d6]]}}{{roll3=[[[[{@{finesse3},@{finesse3}+@{bonusdice}+2}kl1]]d6]]}}{{roll4=[[@{finesse4}d6]]}}{{bonus1=[[[[{@{bonusdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{bonusdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{bonusdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{bonusdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{bonusdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{bonusdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{finesse1}-@{finesse2}-@{finesse3}-@{finesse4}-(@{bonusdice})+1,1}kl1]]d6]], [[[[{-@{finesse1}-@{finesse2}-@{finesse3}-@{finesse4}-(@{bonusdice})+1,1}kl1]]d6]]}}@{title_text}' data-i18n="finesse" data-i18n-title="finesse_description" title="Finesse an item from someone's pocket; employ subtle misdirection or sleight-of-hand; formally duel an opponent.">Finesse</button>
 					</div>
 				</div>
 			</div>
