@@ -1,6 +1,8 @@
 # Blades in the Dark Character Sheet
 
-This is a character sheet for Blades in the Dark for use on Roll20.
+This is a character sheet for Blades in the Dark for use on Roll20, currently being converted to work for the pirate hack Sea of Dead Men.
+
+Original sheet by Jakob Oesinghaus, from whom this is forked.
 
 ## Changelog
 
