@@ -421,6 +421,44 @@ const crewData = {
 		}
 	},
 	playbookData = {
+		commander: {
+			abilities: ["iron_will", "self_control", "expertise", "sharpshooter", "tenacious", "master_and_commander", "ready_for_anything", "focused"],
+			base: {
+				command1: "1",
+				command2: "1",
+				friends_title: "playbook_commander_friends_title",
+				gatherinfo1: "gatherinfo_what_do_they_intend",
+				gatherinfo2: "gatherinfo_how_can_I_get_them",
+				gatherinfo3: "gatherinfo_what_are_they_really",
+				gatherinfo4: "gatherinfo_what_should_I_look",
+				gatherinfo5: "gatherinfo_wheres_the_weakness",
+				gatherinfo6: "gatherinfo_how_can_I_find",
+				playbook_description: "playbook_commander_description",
+				reckon1: "1",
+				setting_traumata_set: "normal",
+				setting_vice_type: "normal",
+				xp_condition: "playbook_commander_xp_condition"
+			},
+			items: [{
+				bold: "on",
+				name: "playbook_item_fine_rifle",
+				numboxes: "1"
+			}, {
+				bold: "on",
+				name: "playbook_item_fine_pistol",
+				numboxes: "1"
+			}, {
+				bold: "on",
+				name: "playbook_item_fine_navigational_tools",
+				numboxes: "1"
+			}, {
+				name: "playbook_item_documents_and_books",
+				numboxes: "1"
+			}, {
+				name: "playbook_item_personal_memento",
+				numboxes: "0"
+			}]
+		},
 		cutter: {
 			abilities: ["battleborn", "bodyguard", "ghost_fighter", "leader", "mule", "not_to_be_trifled_with", "savage", "vigorous"],
 			base: {
@@ -621,6 +659,154 @@ const crewData = {
 				numboxes: "1"
 			}, {
 				name: "playbook_item_spiritbane_charm",
+				numboxes: "0"
+			}]
+		},
+		mariner: {
+			abilities: ["in_fine_condition", "saboteur", "to_the_brink", "side_jobs", "shipshape", "sawbones", "no_rest_for_the_weary", "sturdy"],
+			base: {
+				friends_title: "playbook_mariner_friends_title",
+				gatherinfo1: "gatherinfo_what_do_they_intend",
+				gatherinfo2: "gatherinfo_how_can_I_get_them",
+				gatherinfo3: "gatherinfo_what_are_they_really",
+				gatherinfo4: "gatherinfo_what_should_I_look",
+				gatherinfo5: "gatherinfo_wheres_the_weakness",
+				gatherinfo6: "gatherinfo_how_can_I_find",
+				navigate1: "1",
+				navigate2: "1",
+				patch1: "1",
+				playbook_description: "playbook_mariner_description",
+				setting_traumata_set: "normal",
+				setting_vice_type: "normal",
+				xp_condition: "playbook_mariner_xp_condition"
+			},
+			items: [{
+				bold: "on",
+				name: "playbook_item_fine_carpenter's_tools",
+				numboxes: "1"
+			}, {
+				bold: "on",
+				name: "playbook_item_fine_bottle_of_rum",
+				numboxes: "1"
+			}, {
+				bold: "on",
+				name: "playbook_item_fine_explosive",
+				numboxes: "1"
+			}, {
+				name: "warding_talisman",
+				numboxes: "0"
+			}, {
+				name: "trained_pet",
+				numboxes: "1"
+			}]
+		},
+		occultist: {
+			abilities: ["from_the_deep", "tempest", "whispers_in_the_wind", "witch_doctor", "familiar", "black_spot", "born_in_brine", "warded"],
+			base: {
+				attune1: "1",
+				attune2: "1",
+				friends_title: "playbook_occultist_friends_title",
+				gatherinfo1: "gatherinfo_what_do_they_intend",
+				gatherinfo2: "gatherinfo_how_can_I_get_them",
+				gatherinfo3: "gatherinfo_what_are_they_really",
+				gatherinfo4: "gatherinfo_what_should_I_look",
+				gatherinfo5: "gatherinfo_wheres_the_weakness",
+				gatherinfo6: "gatherinfo_how_can_I_find",
+				playbook_description: "playbook_occultist_description",
+				scan1: "1",
+				setting_traumata_set: "normal",
+				setting_vice_type: "normal",
+				xp_condition: "playbook_occultist_xp_condition"
+			},
+			items: [{
+				bold: "on",
+				name: "playbook_item_fine_whalebone_knife",
+				numboxes: "1"
+			}, {
+				bold: "on",
+				name: "playbook_item_fine_warding_talisman",
+				numboxes: "0"
+			}, {
+				name: "trained_pet",
+				numboxes: "1"
+			}, {
+				name: "playbook_item_voodoo_doll",
+				numboxes: "1"
+			}, {
+				name: "playbook_item_fanciful_map",
+				numboxes: "0"
+			}]
+		},
+		reaver: {
+			abilities: ["not_without_a_fight", "resilient", "tough_as_nails", "fearsome_reputation", "armed_to_the_teeth", "savage", "right_bastard", "battleborn"],
+			base: {
+				brawl1: "1",
+				brawl2: "1",
+				command1: "1",
+				friends_title: "playbook_reaver_friends_title",
+				gatherinfo1: "gatherinfo_what_do_they_intend",
+				gatherinfo2: "gatherinfo_how_can_I_get_them",
+				gatherinfo3: "gatherinfo_what_are_they_really",
+				gatherinfo4: "gatherinfo_what_should_I_look",
+				gatherinfo5: "gatherinfo_wheres_the_weakness",
+				gatherinfo6: "gatherinfo_how_can_I_find",
+				playbook_description: "playbook_reaver_description",
+				setting_traumata_set: "normal",
+				setting_vice_type: "normal",
+				xp_condition: "playbook_reaver_xp_condition"
+			},
+			items: [{
+				bold: "on",
+				name: "playbook_item_fine_hand_weapon",
+				numboxes: "1"
+			}, {
+				name: "playbook_item_brace_of_pistols",
+				numboxes: "2"
+			}, {
+				name: "playbook_item_scary_weapon_or_tool",
+				numboxes: "1"
+			}, {
+				name: "playbook_item_manacles_and_chain",
+				numboxes: "1"
+			}, {
+				name: "warding_talisman",
+				numboxes: "0"
+			}]
+		},
+		scoundrel: {
+			abilities: ["daredevil", "cloak_&_dagger", "reflexes", "savvy", "jack_of_all_trades", "trust_in_me", "against_the_odds", "irrepressible"],
+			base: {
+				charm1: "1",
+				charm2: "1",
+				friends_title: "playbook_scoundrel_friends_title",
+				gatherinfo1: "gatherinfo_what_do_they_intend",
+				gatherinfo2: "gatherinfo_how_can_I_get_them",
+				gatherinfo3: "gatherinfo_what_are_they_really",
+				gatherinfo4: "gatherinfo_what_should_I_look",
+				gatherinfo5: "gatherinfo_wheres_the_weakness",
+				gatherinfo6: "gatherinfo_how_can_I_find",
+				playbook_description: "playbook_scoundrel_description",
+				setting_traumata_set: "normal",
+				setting_vice_type: "normal",
+				vault1: "1",
+				xp_condition: "playbook_scoundrel_xp_condition"
+			},
+			items: [{
+				bold: "on",
+				name: "playbook_item_fine_blade",
+				numboxes: "1"
+			}, {
+				bold: "on",
+				name: "playbook_item_fine_set_of_clothes",
+				numboxes: "1"
+			}, {
+				name: "playbook_item_loaded_dice",
+				numboxes: "0"
+			}, {
+				name: "playbook_item_lockpicking_tools",
+				numboxes: "0"
+			}, {
+				name: "warding_talisman",
 				numboxes: "0"
 			}]
 		},
@@ -1117,8 +1303,8 @@ const crewData = {
 			numboxes: '1'
 		},
 		{
-			name: 'throwing_knives',
-			description: 'throwing_knives_description',
+			name: 'a_firearm',
+			description: 'a_firearm_description',
 			numboxes: '1'
 		},
 		{
@@ -1156,43 +1342,38 @@ const crewData = {
 			short: 'on'
 		},
 		{
-			name: 'burglary_gear',
-			description: 'burglary_gear_description',
+			name: 'navigational_tools',
+			description: 'navigational_tools_description',
+			numboxes: '1'
+		},
+		{
+			name: 'a_bottle_of_rum',
+			description: 'a_bottle_of_rum_description',
+			numboxes: '1'
+		},
+		{
+			name: 'a_crude_explosive',
+			description: 'a_crude_explosive_description',
 			numboxes: '1'
 		},
 		{
 			name: 'climbing_gear',
 			description: 'climbing_gear_description',
-			numboxes: '2'
-		},
-		{
-			name: 'arcane_implements',
-			description: 'arcane_implements_description',
 			numboxes: '1'
 		},
 		{
-			name: 'documents',
-			description: 'documents_description',
+			name: 'carpenter\'s_tools',
+			description: 'carpenter\'s_tools_description',
 			numboxes: '1'
 		},
 		{
-			name: 'subterfuge_supplies',
-			description: 'subterfuge_supplies_description',
+			name: 'bandages',
+			description: 'bandages_description',
 			numboxes: '1'
 		},
 		{
-			name: 'demolition_tools',
-			description: 'demolition_tools_description',
-			numboxes: '2'
-		},
-		{
-			name: 'tinkering_tools',
-			description: 'tinkering_tools_description',
-			numboxes: '1'
-		},
-		{
-			name: 'lantern',
-			description: 'lantern_description',
+			name: 'a_torch_or_lantern',
+			description: 'a_torch_or_lantern_description',
 			numboxes: '1'
 		}
 	],
