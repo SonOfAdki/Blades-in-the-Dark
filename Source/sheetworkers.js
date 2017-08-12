@@ -272,7 +272,6 @@ const crewData = {
 				crew_xp_condition: "crew_marauders_xp_condition",
 				hunting_grounds_type: "crew_marauders_hunting_grounds_type",
 				hunting_grounds_description: "crew_marauders_hunting_grounds_description",
-				upgrade_10_check_1: "on",
 				upgrade_21_check_1: "on"
 			},
 			upgrades: [{
@@ -329,8 +328,7 @@ const crewData = {
 				crew_xp_condition: "crew_phantoms_xp_condition",
 				hunting_grounds_type: "crew_phantoms_hunting_grounds_type",
 				hunting_grounds_description: "crew_phantoms_hunting_grounds_description",
-				upgrade_10_check_1: "on",
-				upgrade_21_check_1: "on",
+				upgrade_22_check_1: "on",
 				setting_show_purpose: "on"
 			},
 			upgrades: [{
@@ -387,8 +385,7 @@ const crewData = {
 				crew_xp_condition: "crew_renegades_xp_condition",
 				hunting_grounds_type: "crew_renegades_hunting_grounds_type",
 				hunting_grounds_description: "crew_renegades_hunting_grounds_description",
-				upgrade_10_check_1: "on",
-				upgrade_21_check_1: "on"
+				upgrade_23_check_1: "on"
 			},
 			upgrades: [{
 				name: 'crew_upgrade_hidden_pockets',
@@ -1595,6 +1592,8 @@ const crewData = {
 		upgrade_17_description: 'upgrade_tools_description',
 		upgrade_18_name: 'retractable_keel',
 		upgrade_18_description: 'upgrade_retractable_keel_description',
+		upgrade_19_name: 'weapons',
+		upgrade_19_description: 'upgrade_weapons_description',
 		upgrade_20_name: 'insight',
 		upgrade_20_description: 'upgrade_insight_description',
 		upgrade_21_name: 'prowess',
