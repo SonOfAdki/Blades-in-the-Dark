@@ -114,7 +114,7 @@
 						<span></span>
 					</div>
 					<div class="sheet-black-on-grey">
-						<div class="sheet-label" data-i18n="turf">Turf</div>
+						<!--<div class="sheet-label" data-i18n="turf">Turf</div>-->
 					</div>
 				</div>
 			</div>
@@ -271,6 +271,71 @@
 					<span class="sheet-italic" data-i18n="upon_crew_advance">Upon crew advance, each PC gets +2 Stash (+1 per Tier)</span>
 				</div>
 			</div>
+		</div>
+		<!-- Harm -->
+		<div class="sheet-harm sheet-col63">
+			<div class="sheet-blackheader sheet-harmheader sheet-col100">
+				<div class="sheet-label" data-i18n="harm">Harm</div>
+			</div>
+			<div class="sheet-harmrow sheet-col100">
+				<div class="sheet-label">3</div>
+				<div>
+					<div class="sheet-col100">
+						<textarea spellcheck="false" name="attr_harm3"></textarea>
+					</div>
+				</div>
+				<div class="sheet-label" data-i18n="need_help">Need Help</div>
+			</div>
+			<div class="sheet-harmrow sheet-col100">
+				<div class="sheet-label">2</div>
+				<div>
+					<div class="sheet-col50">
+						<textarea spellcheck="false" name="attr_harm2_1"></textarea>
+					</div>
+					<div class="sheet-col50">
+						<textarea spellcheck="false" name="attr_harm2_2"></textarea>
+					</div>
+				</div>
+				<div class="sheet-label" data-i18n="minus1d">-1D</div>
+			</div>
+			<div class="sheet-harmrow sheet-col100">
+				<div class="sheet-label">1</div>
+				<div>
+					<div class="sheet-col50">
+						<textarea spellcheck="false" name="attr_harm1_1"></textarea>
+					</div>
+					<div class="sheet-col50">
+						<textarea spellcheck="false" name="attr_harm1_2"></textarea>
+					</div>
+				</div>
+				<div class="sheet-label" data-i18n="less_effect">Less Effect</div>
+			</div>
+		</div>
+		<div class="sheet-col37">
+				<!-- Repair -->
+				<div class="sheet-col45 sheet-healing sheet-4clock">
+					<div class="sheet-blackheader sheet-col100">
+						<button type="roll" name="roll_repair" class="sheet-rollbutton sheet-tierbutton" value='&{template:bitd} {{charname=@{character_name}}}{{resist=1}}{{short=1}}{{title-repair=1}}{{title=^{repair}}}{{subtitle=^{rolls_for}}}{{bonusdice=[[@{numberofdice_long}]]}}{{bonus1=[[[[{@{numberofdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{numberofdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{numberofdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{numberofdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{numberofdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{numberofdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{1-(@{numberofdice}),1}kl1]]d6]], [[[[{1-(@{numberofdice}),1}kl1]]d6]]}}@{title_text}' data-i18n="repair">Repair</button>
+					</div>
+					<div class="sheet-col100">
+						<span class="sheet-italic" data-i18n="progress_clock" data-i18n-title="repairblurb" title="Work in downtime to repair your ship">progress clock</span>
+					</div>
+					<input type="checkbox" name="attr_repair" class="sheet-hidden" value="0" checked/>
+					<input type="checkbox" name="attr_repair" class="sheet-hidden" value="1"/>
+					<input type="checkbox" name="attr_repair" class="sheet-hidden" value="2"/>
+					<input type="checkbox" name="attr_repair" class="sheet-hidden" value="3"/>
+					<input type="checkbox" name="attr_repair" class="sheet-hidden" value="4"/>
+					<div class="sheet-zeroholder">
+						<input type="radio" value="0" name="attr_repair" class="sheet-zero" checked/>
+						<span></span>
+					</div>
+					<div class="sheet-clockpicture">
+						<input type="radio" name="attr_repair" value="1" data-i18n-title="repairblurb" title="Work in downtime to repair your ship"/>
+						<input type="radio" name="attr_repair" value="2" data-i18n-title="repairblurb" title="Work in downtime to repair your ship"/>
+						<input type="radio" name="attr_repair" value="3" data-i18n-title="repairblurb" title="Work in downtime to repair your ship"/>
+						<input type="radio" name="attr_repair" value="4" data-i18n-title="repairblurb" title="Work in downtime to repair your ship"/>
+					</div>
+				</div>
 		</div>
 		<!-- Special abilities -->
 		<div class="sheet-col100 sheet-def-margin">
