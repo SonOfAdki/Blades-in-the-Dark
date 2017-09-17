@@ -117,7 +117,7 @@ const crewData = {
 			}]
 		},
 		renegades: {
-			abilities: ["scallywags", "devil's_own_luck", "scavengers", "crafty", "synchronized", "low_profile", "all_hands"],
+			abilities: ["scallywags", "devil's_own_luck", "scavengers", "silver_tongued", "synchronized", "low_profile", "all_hands"],
 			base: {
 				claim_1_desc: "claim_interrogation_chamber_description",
 				claim_1_name: "claim_interrogation_chamber",
