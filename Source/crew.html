@@ -16,8 +16,8 @@
 				<div class="sheet-label sheet-header-text sheet-header-title" data-i18n="reputation">Reputation</div>
 			</label>
 			<label class="sheet-col100">
-				<input type="text" spellcheck="false" name="attr_flagship">
-				<div class="sheet-label sheet-header-text sheet-header-title" data-i18n="flagship">Flagship</div>
+				<input type="text" spellcheck="false" name="attr_lair">
+				<div class="sheet-label sheet-header-text sheet-header-title" data-i18n="lair">Lair</div>
 			</label>
 			<input type="checkbox" name="attr_setting_show_deity" class="sheet-hidden sheet-hider" value="1">
 			<label class="sheet-col55">
@@ -37,10 +37,6 @@
 			<label class="sheet-col100">
 				<input type="text" spellcheck="false" name="attr_origin">
 				<div class="sheet-label sheet-header-text sheet-header-title" data-i18n="origin">Origin</div>
-			</label>
-			<label class="sheet-col100">
-				<input type="text" spellcheck="false" name="attr_purpose">
-				<div class="sheet-label sheet-header-text sheet-header-title" data-i18n="purpose">Purpose</div>
 			</label>
 		</div>
 		<!-- Rep, Hold, and Tier -->
@@ -95,7 +91,7 @@
 				</div>
 				<div class="sheet-rep3 sheet-blackborder">
 					<div class="sheet-black-on-grey">
-						<!--<div class="sheet-label" data-i18n="turf">Turf</div>-->
+						<div class="sheet-label" data-i18n="turf">Turf</div>
 					</div>
 					<div class="sheet-turfzero-holder">
 						<input type="radio" name="attr_turf" class="sheet-zero" value="0" checked>
@@ -140,7 +136,323 @@
 				</div>
 			</div>
 		</div>
-
+		<!-- Claims -->
+		<div class="sheet-claims sheet-col100 sheet-white-repcontrol">
+			<div class="sheet-claimsrow sheet-flex">
+				<input type="checkbox" name="attr_claim_1_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_1_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_1_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_1_desc" class="sheet-claim-desc"></textarea>
+				</div>
+				<label class="sheet-claims-horisep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_1_2" value="1" checked>
+					<span></span>
+				</label>
+				<input type="checkbox" name="attr_claim_2_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_2_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_2_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_2_desc" class="sheet-claim-desc"></textarea>
+				</div>
+				<label class="sheet-claims-horisep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_2_3" value="1" checked>
+					<span></span>
+				</label>
+				<input type="checkbox" name="attr_claim_3_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_3_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_3_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_3_desc" class="sheet-claim-desc"></textarea>
+				</div>
+				<label class="sheet-claims-horisep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_3_4" value="1" checked>
+					<span></span>
+				</label>
+				<input type="checkbox" name="attr_claim_4_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_4_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_4_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_4_desc" class="sheet-claim-desc"></textarea>
+				</div>
+				<label class="sheet-claims-horisep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_4_5" value="1" checked>
+					<span></span>
+				</label>
+				<input type="checkbox" name="attr_claim_5_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_5_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_5_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_5_desc" class="sheet-claim-desc"></textarea>
+				</div>
+			</div>
+			<div class="sheet-claims-seprow sheet-flex">
+				<label class="sheet-claims-vertsep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_1_6" value="1" checked>
+					<span></span>
+				</label>
+				<label class="sheet-claims-vertsep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_2_7" value="1" checked>
+					<span></span>
+				</label>
+				<label class="sheet-claims-vertsep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_3_8" value="1" checked>
+					<span></span>
+				</label>
+				<label class="sheet-claims-vertsep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_4_9" value="1" checked>
+					<span></span>
+				</label>
+				<label class="sheet-claims-vertsep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_5_10" value="1" checked>
+					<span></span>
+				</label>
+			</div>
+			<div class="sheet-claimsrow sheet-flex">
+				<input type="checkbox" name="attr_claim_6_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_6_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_6_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_6_desc" class="sheet-claim-desc"></textarea>
+				</div>
+				<label class="sheet-claims-horisep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_6_7" value="1" checked>
+					<span></span>
+				</label>
+				<input type="checkbox" name="attr_claim_7_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_7_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_7_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_7_desc" class="sheet-claim-desc"></textarea>
+				</div>
+				<label class="sheet-claims-horisep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_7_8" value="1" checked>
+					<span></span>
+				</label>
+				<div class="sheet-lairbox sheet-flex-center">
+					<div class="sheet-uppercase" data-i18n="lair">Lair</div>
+				</div>
+				<label class="sheet-claims-horisep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_8_9" value="1" checked>
+					<span></span>
+				</label>
+				<input type="checkbox" name="attr_claim_9_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_9_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_9_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_9_desc" class="sheet-claim-desc"></textarea>
+				</div>
+				<label class="sheet-claims-horisep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_9_10" value="1" checked>
+					<span></span>
+				</label>
+				<input type="checkbox" name="attr_claim_10_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_10_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_10_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_10_desc" class="sheet-claim-desc"></textarea>
+				</div>
+			</div>
+			<div class="sheet-claims-seprow sheet-flex">
+				<label class="sheet-claims-vertsep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_6_11" value="1" checked>
+					<span></span>
+				</label>
+				<label class="sheet-claims-vertsep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_7_12" value="1" checked>
+					<span></span>
+				</label>
+				<label class="sheet-claims-vertsep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_8_13" value="1" checked>
+					<span></span>
+				</label>
+				<label class="sheet-claims-vertsep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_9_14" value="1" checked>
+					<span></span>
+				</label>
+				<label class="sheet-claims-vertsep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_10_15" value="1" checked>
+					<span></span>
+				</label>
+			</div>
+			<div class="sheet-claimsrow sheet-flex">
+				<input type="checkbox" name="attr_claim_11_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_11_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_11_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_11_desc" class="sheet-claim-desc"></textarea>
+				</div>
+				<label class="sheet-claims-horisep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_11_12" value="1" checked>
+					<span></span>
+				</label>
+				<input type="checkbox" name="attr_claim_12_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_12_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_12_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_12_desc" class="sheet-claim-desc"></textarea>
+				</div>
+				<label class="sheet-claims-horisep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_12_13" value="1" checked>
+					<span></span>
+				</label>
+				<input type="checkbox" name="attr_claim_13_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_13_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_13_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_13_desc" class="sheet-claim-desc"></textarea>
+				</div>
+				<label class="sheet-claims-horisep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_13_14" value="1" checked>
+					<span></span>
+				</label>
+				<input type="checkbox" name="attr_claim_14_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_14_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_14_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_14_desc" class="sheet-claim-desc"></textarea>
+				</div>
+				<label class="sheet-claims-horisep sheet-claimbridge">
+					<input type="checkbox" name="attr_claim_bridge_14_15" value="1" checked>
+					<span></span>
+				</label>
+				<input type="checkbox" name="attr_claim_15_check" class="sheet-hidden" value="1">
+				<div class="sheet-claimbox">
+					<label>
+						<input type="checkbox" name="attr_claim_15_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+						<span></span>
+					</label>
+					<textarea spellcheck="false" name="attr_claim_15_name" class="sheet-label"></textarea>
+					<textarea spellcheck="false" name="attr_claim_15_desc" class="sheet-claim-desc"></textarea>
+				</div>
+			</div>
+			<fieldset class="repeating_claim">
+				<div class="sheet-claims-seprow sheet-flex">
+					<label class="sheet-claims-vertsep sheet-claimbridge">
+						<input type="checkbox" name="attr_claim_bridge_top_1" value="1">
+						<span></span>
+					</label>
+					<label class="sheet-claims-vertsep sheet-claimbridge">
+						<input type="checkbox" name="attr_claim_bridge_top_2" value="1">
+						<span></span>
+					</label>
+					<label class="sheet-claims-vertsep sheet-claimbridge">
+						<input type="checkbox" name="attr_claim_bridge_top_3" value="1">
+						<span></span>
+					</label>
+					<label class="sheet-claims-vertsep sheet-claimbridge">
+						<input type="checkbox" name="attr_claim_bridge_top_4" value="1">
+						<span></span>
+					</label>
+					<label class="sheet-claims-vertsep sheet-claimbridge">
+						<input type="checkbox" name="attr_claim_bridge_top_5" value="1">
+						<span></span>
+					</label>
+				</div>
+				<div class="sheet-claimsrow sheet-flex">
+					<input type="checkbox" name="attr_claim_1_check" class="sheet-hidden" value="1">
+					<div class="sheet-claimbox">
+						<label>
+							<input type="checkbox" name="attr_claim_1_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+							<span></span>
+						</label>
+						<textarea spellcheck="false" name="attr_claim_1_name" class="sheet-label"></textarea>
+						<textarea spellcheck="false" name="attr_claim_1_desc" class="sheet-claim-desc"></textarea>
+					</div>
+					<label class="sheet-claims-horisep sheet-claimbridge">
+						<input type="checkbox" name="attr_claim_bridge_1_2" value="1">
+						<span></span>
+					</label>
+					<input type="checkbox" name="attr_claim_2_check" class="sheet-hidden" value="1">
+					<div class="sheet-claimbox">
+						<label>
+							<input type="checkbox" name="attr_claim_2_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+							<span></span>
+						</label>
+						<textarea spellcheck="false" name="attr_claim_2_name" class="sheet-label"></textarea>
+						<textarea spellcheck="false" name="attr_claim_2_desc" class="sheet-claim-desc"></textarea>
+					</div>
+					<label class="sheet-claims-horisep sheet-claimbridge">
+						<input type="checkbox" name="attr_claim_bridge_2_3" value="1">
+						<span></span>
+					</label>
+					<input type="checkbox" name="attr_claim_3_check" class="sheet-hidden" value="1">
+					<div class="sheet-claimbox">
+						<label>
+							<input type="checkbox" name="attr_claim_3_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+							<span></span>
+						</label>
+						<textarea spellcheck="false" name="attr_claim_3_name" class="sheet-label"></textarea>
+						<textarea spellcheck="false" name="attr_claim_3_desc" class="sheet-claim-desc"></textarea>
+					</div>
+					<label class="sheet-claims-horisep sheet-claimbridge">
+						<input type="checkbox" name="attr_claim_bridge_3_4" value="1">
+						<span></span>
+					</label>
+					<input type="checkbox" name="attr_claim_4_check" class="sheet-hidden" value="1">
+					<div class="sheet-claimbox">
+						<label>
+							<input type="checkbox" name="attr_claim_4_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+							<span></span>
+						</label>
+						<textarea spellcheck="false" name="attr_claim_4_name" class="sheet-label"></textarea>
+						<textarea spellcheck="false" name="attr_claim_4_desc" class="sheet-claim-desc"></textarea>
+					</div>
+					<label class="sheet-claims-horisep sheet-claimbridge">
+						<input type="checkbox" name="attr_claim_bridge_4_5" value="1">
+						<span></span>
+					</label>
+					<input type="checkbox" name="attr_claim_5_check" class="sheet-hidden" value="1">
+					<div class="sheet-claimbox">
+						<label>
+							<input type="checkbox" name="attr_claim_5_check" class="sheet-checkbox sheet-squarebox-small" value="1">
+							<span></span>
+						</label>
+						<textarea spellcheck="false" name="attr_claim_5_name" class="sheet-label"></textarea>
+						<textarea spellcheck="false" name="attr_claim_5_desc" class="sheet-claim-desc"></textarea>
+					</div>
+				</div>
+			</fieldset>
+		</div>
 		<!-- Heat and Coin -->
 		<div class="sheet-col100 sheet-flex sheet-heat-and-vault sheet-def-margin">
 			<!-- Heat -->
@@ -199,7 +511,7 @@
 						<div class="sheet-label" data-i18n="coin">Coin</div>
 					</div>
 					<div class="sheet-greyheader sheet-crewcoin2">
-						<div class="sheet-label" data-i18n="coffers">Coffers</div>
+						<div class="sheet-label" data-i18n="vaults">Vaults</div>
 					</div>
 				</div>
 				<div class="sheet-col100 sheet-flex sheet-crewcoin-coins">
@@ -245,71 +557,6 @@
 					<em data-i18n="upon_crew_advance">Upon crew advance, each PC gets +2 Stash (+1 per Tier)</em>
 				</div>
 			</div>
-		</div>
-		<!-- Harm -->
-		<div class="sheet-harm sheet-col63">
-			<div class="sheet-blackheader sheet-harmheader sheet-col100">
-				<div class="sheet-label" data-i18n="harm">Harm</div>
-			</div>
-			<div class="sheet-harmrow sheet-col100">
-				<div class="sheet-label">3</div>
-				<div>
-					<div class="sheet-col100">
-						<textarea spellcheck="false" name="attr_harm3"></textarea>
-					</div>
-				</div>
-				<div class="sheet-label" data-i18n="need_help">Need Help</div>
-			</div>
-			<div class="sheet-harmrow sheet-col100">
-				<div class="sheet-label">2</div>
-				<div>
-					<div class="sheet-col50">
-						<textarea spellcheck="false" name="attr_harm2_1"></textarea>
-					</div>
-					<div class="sheet-col50">
-						<textarea spellcheck="false" name="attr_harm2_2"></textarea>
-					</div>
-				</div>
-				<div class="sheet-label" data-i18n="minus1d">-1D</div>
-			</div>
-			<div class="sheet-harmrow sheet-col100">
-				<div class="sheet-label">1</div>
-				<div>
-					<div class="sheet-col50">
-						<textarea spellcheck="false" name="attr_harm1_1"></textarea>
-					</div>
-					<div class="sheet-col50">
-						<textarea spellcheck="false" name="attr_harm1_2"></textarea>
-					</div>
-				</div>
-				<div class="sheet-label" data-i18n="less_effect">Less Effect</div>
-			</div>
-		</div>
-		<div class="sheet-col37">
-				<!-- Repair -->
-				<div class="sheet-col45 sheet-healing sheet-4clock">
-					<div class="sheet-blackheader sheet-col100">
-						<button type="roll" name="roll_repair" class="sheet-rollbutton sheet-tierbutton" value='&{template:bitd} {{charname=@{character_name}}}{{resist=1}}{{short=1}}{{title-repair=1}}{{title=^{repair}}}{{subtitle=^{rolls_for}}}{{bonusdice=[[@{numberofdice_long}]]}}{{bonus1=[[[[{@{numberofdice},1}kl1]]d6]]}}{{bonus2=[[[[{@{numberofdice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{@{numberofdice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{@{numberofdice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{@{numberofdice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{@{numberofdice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{1-(@{numberofdice}),1}kl1]]d6]], [[[[{1-(@{numberofdice}),1}kl1]]d6]]}}@{title_text}' data-i18n="repair">Repair</button>
-					</div>
-					<div class="sheet-col100">
-						<span class="sheet-italic" data-i18n="progress_clock" data-i18n-title="repairblurb" title="Work in downtime to repair your ship">progress clock</span>
-					</div>
-					<input type="checkbox" name="attr_repair" class="sheet-hidden" value="0" checked/>
-					<input type="checkbox" name="attr_repair" class="sheet-hidden" value="1"/>
-					<input type="checkbox" name="attr_repair" class="sheet-hidden" value="2"/>
-					<input type="checkbox" name="attr_repair" class="sheet-hidden" value="3"/>
-					<input type="checkbox" name="attr_repair" class="sheet-hidden" value="4"/>
-					<div class="sheet-zeroholder">
-						<input type="radio" value="0" name="attr_repair" class="sheet-zero" checked/>
-						<span></span>
-					</div>
-					<div class="sheet-clockpicture">
-						<input type="radio" name="attr_repair" value="1" data-i18n-title="repairblurb" title="Work in downtime to repair your ship"/>
-						<input type="radio" name="attr_repair" value="2" data-i18n-title="repairblurb" title="Work in downtime to repair your ship"/>
-						<input type="radio" name="attr_repair" value="3" data-i18n-title="repairblurb" title="Work in downtime to repair your ship"/>
-						<input type="radio" name="attr_repair" value="4" data-i18n-title="repairblurb" title="Work in downtime to repair your ship"/>
-					</div>
-				</div>
 		</div>
 		<!-- Special abilities -->
 		<div class="sheet-col100 sheet-def-margin">
@@ -435,7 +682,7 @@
 				<!-- Regular upgrades -->
 				<div class="sheet-regularitems sheet-flex-wrap sheet-col100">
 					<div class="sheet-item sheet-col50">
-						<span class="sheet-label" data-i18n="ship">Ship</span>
+						<span class="sheet-label" data-i18n="lair">Lair</span>
 					</div>
 					<div class="sheet-item sheet-col50">
 						<span class="sheet-label" data-i18n="quality">Quality</span>
@@ -446,120 +693,124 @@
 							<span></span>
 							<input type="checkbox" name="attr_upgrade_6_check_2" class="sheet-checkbox sheet-squarebox" value="1">
 							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_6_name" class="sheet-itemname" value="Coffers">
+							<input type="text" spellcheck="false" name="attr_upgrade_6_name" class="sheet-itemname" value="Carriage">
 						</div>
 						<div class="sheet-item-description">
 							<input type="checkbox" name="attr_upgrade_6_expand" class="sheet-expand" value="1">
 							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_6_description" data-i18n-placeholder="description" placeholder="Description">Your ship has a secure strongbox, allowing you to store up to 8 coin. A second upgrade increases your storage capacity to 16.</textarea>
+							<textarea spellcheck="false" name="attr_upgrade_6_description" data-i18n-placeholder="description" placeholder="Description">You have a carriage, two goats to pull it, and a stable. A second upgrade improves the carriage with armor and larger, swifter goats. Horses are very rare in Doskvol — most carriages in the city use the large Akorosian goat as their draft animal.</textarea>
 						</div>
 					</div>
 					<div class="sheet-col50">
 						<div class="sheet-item">
 							<input type="checkbox" name="attr_upgrade_7_check_1" class="sheet-checkbox sheet-squarebox" value="1">
 							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_7_name" class="sheet-itemname" value="Cannons">
+							<input type="text" spellcheck="false" name="attr_upgrade_7_name" class="sheet-itemname" value="Documents">
 						</div>
 						<div class="sheet-item-description">
 							<input type="checkbox" name="attr_upgrade_7_expand" class="sheet-expand" value="1">
 							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_7_description" data-i18n-placeholder="description" placeholder="Description">+1 quality for the ship's Cannons.</textarea>
+							<textarea spellcheck="false" name="attr_upgrade_7_description" data-i18n-placeholder="description" placeholder="Description">+1 quality for Documents.</textarea>
 						</div>
 					</div>
 					<div class="sheet-col50">
 						<div class="sheet-item">
 							<input type="checkbox" name="attr_upgrade_8_check_1" class="sheet-checkbox sheet-squarebox" value="1">
 							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_8_name" class="sheet-itemname" value="Boltholes">
+							<input type="checkbox" name="attr_upgrade_8_check_2" class="sheet-checkbox sheet-squarebox" value="1">
+							<span></span>
+							<input type="text" spellcheck="false" name="attr_upgrade_8_name" class="sheet-itemname" value="Boat">
 						</div>
 						<div class="sheet-item-description">
 							<input type="checkbox" name="attr_upgrade_8_expand" class="sheet-expand" value="1">
 							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_8_description" data-i18n-placeholder="description" placeholder="Description">Your ship is filled with nooks and crannies useful for concealing illicit cargo. Plunder you’re carrying can be hidden to thwart all but the most thorough searches.</textarea>
+							<textarea spellcheck="false" name="attr_upgrade_8_description" data-i18n-placeholder="description" placeholder="Description">You have a boat, a dock on a waterway, and a small shack to store boating supplies. A second upgrade improves the boat with armor and more cargo capacity.</textarea>
 						</div>
 					</div>
 					<div class="sheet-col50">
 						<div class="sheet-item">
 							<input type="checkbox" name="attr_upgrade_9_check_1" class="sheet-checkbox sheet-squarebox" value="1">
 							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_9_name" class="sheet-itemname" class="sheet-itemname" value="Hull">
+							<input type="text" spellcheck="false" name="attr_upgrade_9_name" class="sheet-itemname" class="sheet-itemname" value="Gear">
 						</div>
 						<div class="sheet-item-description">
 							<input type="checkbox" name="attr_upgrade_9_expand" class="sheet-expand" value="1">
 							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_9_description" data-i18n-placeholder="description" placeholder="Description">+1 quality for the ship's Hull.</textarea>
+							<textarea spellcheck="false" name="attr_upgrade_9_description" data-i18n-placeholder="description" placeholder="Description">+1 quality for Burglary Gear and Climbing Gear.</textarea>
 						</div>
 					</div>
 					<div class="sheet-col50">
 						<div class="sheet-item">
 							<input type="checkbox" name="attr_upgrade_10_check_1" class="sheet-checkbox sheet-squarebox" value="1">
 							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_10_name" class="sheet-itemname" value="Hidden Cannons">
+							<input type="text" spellcheck="false" name="attr_upgrade_10_name" class="sheet-itemname" value="Hidden">
 						</div>
 						<div class="sheet-item-description">
 							<input type="checkbox" name="attr_upgrade_10_expand" class="sheet-expand" value="1">
 							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_10_description" data-i18n-placeholder="description" placeholder="Description">Some or all of your gunports are concealed, allowing your ship to pass for one less heavily armed.</textarea>
+							<textarea spellcheck="false" name="attr_upgrade_10_description" data-i18n-placeholder="description" placeholder="Description">Your lair has a secret location and is disguised to hide it from view. If your lair is discovered, use two downtime activities and pay coin equal to your Tier to relocate it and hide it once again.</textarea>
 						</div>
 					</div>
 					<div class="sheet-col50">
 						<div class="sheet-item">
 							<input type="checkbox" name="attr_upgrade_11_check_1" class="sheet-checkbox sheet-squarebox" value="1">
 							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_11_name" class="sheet-itemname" value="Sails">
+							<input type="text" spellcheck="false" name="attr_upgrade_11_name" class="sheet-itemname" value="Implements">
 						</div>
 						<div class="sheet-item-description">
 							<input type="checkbox" name="attr_upgrade_11_expand" class="sheet-expand" value="1">
 							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_11_description" data-i18n-placeholder="description" placeholder="Description">+1 quality for the ship's Sails.</textarea>
+							<textarea spellcheck="false" name="attr_upgrade_11_description" data-i18n-placeholder="description" placeholder="Description">+1 quality for Arcane Implements.</textarea>
 						</div>
 					</div>
 					<div class="sheet-col50">
 						<div class="sheet-item">
 							<input type="checkbox" name="attr_upgrade_12_check_1" class="sheet-checkbox sheet-squarebox" value="1">
 							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_12_name" class="sheet-itemname" value="Overgunned">
+							<input type="text" spellcheck="false" name="attr_upgrade_12_name" class="sheet-itemname" value="Quarters">
 						</div>
 						<div class="sheet-item-description">
 							<input type="checkbox" name="attr_upgrade_12_expand" class="sheet-expand" value="1">
 							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_12_description" data-i18n-placeholder="description" placeholder="Description">The decorative railings on the upper deck have been replaced with another row of cannons.</textarea>
+							<textarea spellcheck="false" name="attr_upgrade_12_description" data-i18n-placeholder="description" placeholder="Description">Your lair includes living quarters for the crew. Without this upgrade, each PC sleeps elsewhere, and is vulnerable when they do so.</textarea>
 						</div>
 					</div>
 					<div class="sheet-col50">
 						<div class="sheet-item">
 							<input type="checkbox" name="attr_upgrade_13_check_1" class="sheet-checkbox sheet-squarebox" value="1">
 							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_13_name" class="sheet-itemname" value="Rudder">
+							<input type="text" spellcheck="false" name="attr_upgrade_13_name" class="sheet-itemname" value="Supplies">
 						</div>
 						<div class="sheet-item-description">
 							<input type="checkbox" name="attr_upgrade_13_expand" class="sheet-expand" value="1">
 							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_13_description" data-i18n-placeholder="description" placeholder="Description">+1 quality for the ship's Rudder.</textarea>
+							<textarea spellcheck="false" name="attr_upgrade_13_description" data-i18n-placeholder="description" placeholder="Description">+1 quality for Subterfuge Supplies.</textarea>
 						</div>
 					</div>
 					<div class="sheet-col50">
 						<div class="sheet-item">
 							<input type="checkbox" name="attr_upgrade_14_check_1" class="sheet-checkbox sheet-squarebox" value="1">
 							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_14_name" class="sheet-itemname" value="Prow Ram">
+							<input type="checkbox" name="attr_upgrade_14_check_2" class="sheet-checkbox sheet-squarebox" value="1">
+							<span></span>
+							<input type="text" spellcheck="false" name="attr_upgrade_14_name" class="sheet-itemname" value="Secure">
 						</div>
 						<div class="sheet-item-description">
 							<input type="checkbox" name="attr_upgrade_14_expand" class="sheet-expand" value="1">
 							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_14_description" data-i18n-placeholder="description" placeholder="Description">The prow of your ship is reinforced with metal and hardened wood, allowing you to ram enemy vessels while taking only minimal damage yourself.</textarea>
+							<textarea spellcheck="false" name="attr_upgrade_14_description" data-i18n-placeholder="description" placeholder="Description">Your lair has locks, alarms, and traps to thwart intruders. A second upgrade improves the defenses to include arcane measures that work against spirits. You might roll your crew's Tier if these measures are ever put to the test, to see how well they thwart an intruder.</textarea>
 						</div>
 					</div>
 					<div class="sheet-col50">
 						<div class="sheet-item">
 							<input type="checkbox" name="attr_upgrade_15_check_1" class="sheet-checkbox sheet-squarebox" value="1">
 							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_15_name" class="sheet-itemname" value="Charts">
+							<input type="text" spellcheck="false" name="attr_upgrade_15_name" class="sheet-itemname" value="Tools">
 						</div>
 						<div class="sheet-item-description">
 							<input type="checkbox" name="attr_upgrade_15_expand" class="sheet-expand" value="1">
 							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_15_description" data-i18n-placeholder="description" placeholder="Description">+1 quality for Charts.</textarea>
+							<textarea spellcheck="false" name="attr_upgrade_15_description" data-i18n-placeholder="description" placeholder="Description">+1 quality for Demolition Tools and Tinkering Tools.</textarea>
 						</div>
 					</div>
 					<div class="sheet-col50">
@@ -568,52 +819,40 @@
 							<span></span>
 							<input type="checkbox" name="attr_upgrade_16_check_2" class="sheet-checkbox sheet-squarebox" value="1">
 							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_16_name" class="sheet-itemname" value="Specialty Shot">
+							<input type="text" spellcheck="false" name="attr_upgrade_16_name" class="sheet-itemname" value="Vault">
 						</div>
 						<div class="sheet-item-description">
 							<input type="checkbox" name="attr_upgrade_16_expand" class="sheet-expand" value="1">
 							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_16_description" data-i18n-placeholder="description" placeholder="Description">Your ship is stocked with specialty cannon ammunition - chain shot, shrapnel, etc - in addition to the standard cannonballs. A second upgrade provides a portable furnace capable of preparing heated shot.</textarea>
+							<textarea spellcheck="false" name="attr_upgrade_16_description" data-i18n-placeholder="description" placeholder="Description">Your lair has a secure vault, increasing your storage capacity for coin to 8. A second upgrade increases your capacity to 16. A separate part of your vault can be used as a holding cell.</textarea>
 						</div>
 					</div>
 					<div class="sheet-col50">
 						<div class="sheet-item">
 							<input type="checkbox" name="attr_upgrade_17_check_1" class="sheet-checkbox sheet-squarebox" value="1">
 							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_17_name" class="sheet-itemname" value="Tools">
+							<input type="text" spellcheck="false" name="attr_upgrade_17_name" class="sheet-itemname" value="Weapons">
 						</div>
 						<div class="sheet-item-description">
 							<input type="checkbox" name="attr_upgrade_17_expand" class="sheet-expand" value="1">
 							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_17_description" data-i18n-placeholder="description" placeholder="Description">+1 quality for Tools.</textarea>
+							<textarea spellcheck="false" name="attr_upgrade_17_description" data-i18n-placeholder="description" placeholder="Description">+1 quality for Weapons.</textarea>
 						</div>
 					</div>
 					<div class="sheet-col50">
 						<div class="sheet-item">
 							<input type="checkbox" name="attr_upgrade_18_check_1" class="sheet-checkbox sheet-squarebox" value="1">
 							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_18_name" class="sheet-itemname" value="Retractable Keel">
+							<input type="text" spellcheck="false" name="attr_upgrade_18_name" class="sheet-itemname" value="Workshop">
 						</div>
 						<div class="sheet-item-description">
 							<input type="checkbox" name="attr_upgrade_18_expand" class="sheet-expand" value="1">
 							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_18_description" data-i18n-placeholder="description" placeholder="Description">Your ship’s keel can be raised to give it a smaller draft, allowing it to sail through reefs or shallow waters that would otherwise ground a vessel of its size.</textarea>
+							<textarea spellcheck="false" name="attr_upgrade_18_description" data-i18n-placeholder="description" placeholder="Description">Your lair has a workshop appointed with tools for tinkering and alchemy, as well as a small library of books, documents, and maps. You may accomplish long-term projects with these assets without leaving your lair.</textarea>
 						</div>
 					</div>
-
-					<div class="sheet-col50">
-						<div class="sheet-item">
-							<input type="checkbox" name="attr_upgrade_19_check_1" class="sheet-checkbox sheet-squarebox" value="1">
-							<span></span>
-							<input type="text" spellcheck="false" name="attr_upgrade_19_name" class="sheet-itemname" value="Weapons">
-						</div>
-						<div class="sheet-item-description">
-							<input type="checkbox" name="attr_upgrade_19_expand" class="sheet-expand" value="1">
-							<span></span>
-							<textarea spellcheck="false" name="attr_upgrade_19_description" data-i18n-placeholder="description" placeholder="Description">+1 quality for Weapons.</textarea>
-						</div>
+					<div class="sheet-item sheet-col50">
 					</div>
-
 					<div class="sheet-item sheet-upgradecaption sheet-col50">
 						<span class="sheet-label" data-i18n="training">Training</span>
 					</div>
