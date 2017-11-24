@@ -603,10 +603,137 @@ const sheetVersion = "2.5",
 				name: "faction_deathlands_scavengers",
 				tier: "II",
 				hold: "W"
+			},
+			{
+				name: "faction_blank",
+				tier: "",
+				hold: ""
 			}
 		],
 		factions5: [{
 				name: "faction_whitecrown",
+				tier: "V",
+				hold: "S"
+			},
+			{
+				name: "faction_brightstone",
+				tier: "IV",
+				hold: "S"
+			},
+			{
+				name: "faction_charterhall",
+				tier: "IV",
+				hold: "S"
+			},
+			{
+				name: "faction_six_towers",
+				tier: "III",
+				hold: "W"
+			},
+			{
+				name: "faction_silkshore",
+				tier: "II",
+				hold: "S"
+			},
+			{
+				name: "faction_nightmarket",
+				tier: "II",
+				hold: "S"
+			},
+			{
+				name: "faction_crow's_foot",
+				tier: "II",
+				hold: "S"
+			},
+			{
+				name: "faction_the_docks",
+				tier: "II",
+				hold: "S"
+			},
+			{
+				name: "faction_barrowcleft",
+				tier: "II",
+				hold: "S"
+			},
+			{
+				name: "faction_coalridge",
+				tier: "II",
+				hold: "W"
+			},
+			{
+				name: "faction_charhollow",
+				tier: "I",
+				hold: "S"
+			},
+			{
+				name: "faction_dunslough",
+				tier: "I",
+				hold: "W"
+			}
+		],
+		factions6: [{
+				name: "faction_dunslough",
+				tier: "V",
+				hold: "S"
+			},
+			{
+				name: "faction_brightstone",
+				tier: "IV",
+				hold: "S"
+			},
+			{
+				name: "faction_charterhall",
+				tier: "IV",
+				hold: "S"
+			},
+			{
+				name: "faction_six_towers",
+				tier: "III",
+				hold: "W"
+			},
+			{
+				name: "faction_silkshore",
+				tier: "II",
+				hold: "S"
+			},
+			{
+				name: "faction_nightmarket",
+				tier: "II",
+				hold: "S"
+			},
+			{
+				name: "faction_crow's_foot",
+				tier: "II",
+				hold: "S"
+			},
+			{
+				name: "faction_the_docks",
+				tier: "II",
+				hold: "S"
+			},
+			{
+				name: "faction_barrowcleft",
+				tier: "II",
+				hold: "S"
+			},
+			{
+				name: "faction_coalridge",
+				tier: "II",
+				hold: "W"
+			},
+			{
+				name: "faction_charhollow",
+				tier: "I",
+				hold: "S"
+			},
+			{
+				name: "faction_whitecrown",
+				tier: "I",
+				hold: "W"
+			}
+		],
+		factions7: [{
+				name: "faction_the_wraiths",
 				tier: "V",
 				hold: "S"
 			},
@@ -826,6 +953,8 @@ const sheetVersion = "2.5",
 		factions3_header: "factions3",
 		factions4_header: "factions4",
 		factions5_header: "factions5",
+		factions6_header: "factions6",
+		factions7_header: "factions7",
 		frame: "frame",
 		friends_title: "friends",
 		setting_deity_label: "deity",

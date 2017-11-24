@@ -1397,6 +1397,7 @@ input.sheet-zero {
 .sheet-harm {
 	position: relative;
 }
+
 .sheet-harmrow {
 	border-bottom: 1px solid #000;
 	> div {
@@ -1664,6 +1665,7 @@ input.sheet-zero {
 /* STRESS, REP, et cetera */
 .sheet-rep-and-hold, .sheet-heat-and-vault {
 	justify-content: space-between;
+	margin-bottom: 15px;
 }
 .sheet-hold {
 	width: 53%;

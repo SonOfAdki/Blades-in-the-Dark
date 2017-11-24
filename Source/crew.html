@@ -39,6 +39,9 @@
 				<div class="sheet-label sheet-header-text sheet-header-title" data-i18n="origin">Origin</div>
 			</label>
 		</div>
+
+
+
 		<!-- Rep, Hold, and Tier -->
 		<div class="sheet-col100 sheet-flex sheet-rep-and-hold sheet-def-margin">
 			<div class="sheet-rep sheet-flex sheet-col45">
@@ -137,7 +140,7 @@
 			</div>
 		</div>
 		<!-- Claims -->
-		<div class="sheet-claims sheet-col100 sheet-white-repcontrol">
+		<!-- <div class="sheet-claims sheet-col100 sheet-white-repcontrol">
 			<div class="sheet-claimsrow sheet-flex">
 				<input type="checkbox" name="attr_claim_1_check" class="sheet-hidden" value="1">
 				<div class="sheet-claimbox">
@@ -452,13 +455,98 @@
 					</div>
 				</div>
 			</fieldset>
+		</div> -->
+
+		<!-- Ship Damage/Repair -->
+		<!-- Harm -->
+		<div class="sheet-harm sheet-col63">
+			<div class="sheet-blackheader sheet-col100">
+				<div class="sheet-label" data-i18n="harm">Harm</div>
+				<button type="roll" class="sheet-broadcast-button" name="roll_Harm" value="&{template:bitd-broadcast} {{charname=@{character_name}}} {{harm=1}} {{harm3=@{harm3}}} {{harm2_1=@{harm2_1}}} {{harm2_2=@{harm2_2}}} {{harm1_1=@{harm1_1}}} {{harm1_2=@{harm1_2}}} @{title_text}" data-i18n-title="send_details_to_chat" title="Send details to chat">:</button>
+			</div>
+			<div class="sheet-harmrow sheet-col100 sheet-flex">
+				<div class="sheet-flex-center sheet-harmnumber">
+					<div class="sheet-label">3</div>
+				</div>
+				<textarea spellcheck="false" name="attr_harm3"></textarea>
+				<div class="sheet-flex-center sheet-harmeffect">
+					<div class="sheet-label" data-i18n="need_help">Need Help</div>
+				</div>
+			</div>
+			<div class="sheet-harmrow sheet-col100 sheet-flex">
+				<div class="sheet-flex-center sheet-harmnumber">
+					<div class="sheet-label">2</div>
+				</div>
+				<textarea spellcheck="false" name="attr_harm2_1"></textarea>
+				<textarea spellcheck="false" name="attr_harm2_2"></textarea>
+				<div class="sheet-flex-center sheet-harmeffect">
+					<div class="sheet-label" data-i18n="minus1d">-1D</div>
+				</div>
+			</div>
+			<div class="sheet-harmrow sheet-col100 sheet-flex">
+				<div class="sheet-flex-center sheet-harmnumber">
+					<div class="sheet-label">1</div>
+				</div>
+				<textarea spellcheck="false" name="attr_harm1_1"></textarea>
+				<textarea spellcheck="false" name="attr_harm1_2"></textarea>
+				<div class="sheet-flex-center sheet-harmeffect">
+					<div class="sheet-label" data-i18n="less_effect">Less Effect</div>
+				</div>
+			</div>
 		</div>
+		<!-- Repair and Armor (armor currently commented out) -->
+		<div class="sheet-col37 sheet-flex-wrap">
+			<!-- Repair -->
+			<div class="sheet-col45 sheet-healing">
+				<div class="sheet-blackheader sheet-col100">
+					<button type="roll" name="roll_Recovery" class="sheet-label sheet-rollbutton sheet-inherit" value='&{template:bitd} {{charname=@{character_name}}} {{resist=1}} {{short=1}} {{title-recovery=1}} {{title=^{recovery}}} {{subtitle=^{rolls_for-l}}} {{roll1=[[[[{@{numberofdice},1}kl1]]d6]]}} {{roll2=[[[[{[[@{numberofdice}]]-1,1}kl1]]d6]]}} {{roll3=[[[[{[[@{numberofdice}-2]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{numberofdice}-3]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{numberofdice}-4]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{numberofdice}-5]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-(@{numberofdice})]],1}kl1]]d6]], [[[[{[[1-(@{numberofdice})]],1}kl1]]d6]]}} @{title_text}' data-i18n="healing">Repair</button>
+				</div>
+				<div class="sheet-col100 sheet-healing-progress">
+					<em data-i18n="progress_clock" data-i18n-title="recoveryblurb" title="Spend a downtime action to repair the ship">progress clock</em>
+				</div>
+				<input type="hidden" class="sheet-size" value="4">
+				<input type="hidden" name="attr_recovery_max" value="4">
+				<div class="sheet-clock-container">
+					<div class="sheet-spoke-0 sheet-all"></div>
+					<div class="sheet-spoke-90 sheet-all"></div>
+					<input type="radio" name="attr_recovery" class="sheet-zero sheet-input-progress" value="0" checked>
+					<span></span>
+					<input type="radio" name="attr_recovery" class="sheet-input-progress sheet-all" value="1" data-i18n-title="recoveryblurb" title="Get treatment in downtime to activate your healing project clock">
+					<input type="radio" name="attr_recovery" class="sheet-input-progress sheet-all" value="2" data-i18n-title="recoveryblurb" title="Get treatment in downtime to activate your healing project clock">
+					<input type="radio" name="attr_recovery" class="sheet-input-progress sheet-all" value="3" data-i18n-title="recoveryblurb" title="Get treatment in downtime to activate your healing project clock">
+					<input type="radio" name="attr_recovery" class="sheet-input-progress sheet-all" value="4" data-i18n-title="recoveryblurb" title="Get treatment in downtime to activate your healing project clock">
+					<div class="sheet-clock"></div>
+				</div>
+			</div>
+			<!-- Armor -->
+			<!-- <div class="sheet-armor sheet-col55">
+				<div class="sheet-blackheader sheet-col100">
+					<div class="sheet-label" data-i18n="armor_uses">Armor uses</div>
+				</div>
+				<label>
+					<input type="checkbox" name="attr_armor" class="sheet-checkbox sheet-squarebox" value="1">
+					<span></span>
+					<span class="sheet-label" data-i18n="armor">Armor</span>
+				</label>
+				<label>
+					<input type="checkbox" name="attr_armor_heavy" class="sheet-checkbox sheet-squarebox" value="1">
+					<span></span>
+					<span class="sheet-label" data-i18n="+heavy">+Heavy</span>
+				</label>
+				<label>
+					<input type="checkbox" name="attr_armor_special" class="sheet-checkbox sheet-squarebox" value="1">
+					<span></span>
+					<span class="sheet-label" data-i18n="special">Special</span>
+				</label>
+			</div> -->
+		</div>
+
 		<!-- Heat and Coin -->
 		<div class="sheet-col100 sheet-flex sheet-heat-and-vault sheet-def-margin">
 			<!-- Heat -->
-			<div class="sheet-col45 sheet-flex sheet-heat">
+			<!-- <div class="sheet-col45 sheet-flex sheet-heat"> -->
 				<!-- Heat markers -->
-				<div class="sheet-heat1 sheet-blackheader">
+				<!-- <div class="sheet-heat1 sheet-blackheader">
 					<div class="sheet-label"><span name="attr_setting_heat_label"></span></div>
 				</div>
 				<div class="sheet-heat2 sheet-blackborder sheet-flex">
@@ -483,9 +571,9 @@
 					<span></span>
 					<input type="radio" name="attr_heat" class="sheet-tooth sheet-stresstooth" value="9">
 					<span></span>
-				</div>
+				</div> -->
 				<!-- Wanted Level-->
-				<div class="sheet-heat3">
+				<!-- <div class="sheet-heat3">
 					<div class="sheet-blackheader">
 						<button type="roll" name="roll_Wanted" class="sheet-label sheet-rollbutton sheet-inherit" value='&{template:bitd} {{charname=@{character_name}}} {{vice=1}} {{short=1}} {{title-entanglement=1}} {{title=^{entanglement}}} {{subtitle=^{wantedroll1}@{heat}&nbsp;@{setting_heat_label}^{wantedroll2}}} {{roll1=[[[[{[[@{wanted}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{wanted}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{wanted}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{wanted}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{wanted}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{wanted}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{wanted}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{wanted}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{wanted}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{roll10=[[[[{[[@{wanted}+@{bonusdice}-9}]],1}kl1]]d6]]}} {{roll11=[[[[{[[@{wanted}+@{bonusdice}-10}]],1}kl1]]d6]]}} {{roll12=[[[[{[[@{wanted}+@{bonusdice}-11}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{wanted}-(@{bonusdice})]],1}kl1]]d6]], [[[[{[[1-@{wanted}-(@{bonusdice})]],1}kl1]]d6]]}} @{title_text}'><span name="attr_setting_wanted_label"></span></button>
 					</div>
@@ -503,7 +591,7 @@
 						<span></span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- Coin -->
 			<div class="sheet-crewcoin sheet-col52b">
 				<div class="sheet-col100 sheet-flex">

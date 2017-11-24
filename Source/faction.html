@@ -3,7 +3,7 @@
 <div class="sheet-type-faction sheet-flex-wrap">
 	<input type="checkbox" name="attr_setting_clocks_only" class="sheet-hidden sheet-input-clocks-only" value="1">
 	<div class="sheet-factiontitle sheet-flex sheet-col100">
-		<input type="text" spellcheck="false" name="attr_factions_title" class="sheet-label" value="Factions of Doskvol">
+		<input type="text" spellcheck="false" name="attr_factions_title" class="sheet-label" value="Factions of the Carrascan">
 		<input type="checkbox" name="attr_show_faction_generatebutton" class="sheet-hidden sheet-hider" value="1" checked>
 		<label class="sheet-generatebutton">
 			<input type="checkbox" name="attr_generate_factions">
@@ -12,88 +12,16 @@
 		<button type="roll" name="roll_Fortune" class="sheet-fortunebutton sheet-borderbutton" value='&{template:bitd} {{fortune=1}} {{title-fortune=1}} {{title=^{fortune}}} {{short=1}} {{roll1=[[[[{@{numberofdice},1}kl1]]d6]]}} {{roll2=[[[[{[[@{numberofdice}]]-1,1}kl1]]d6]]}} {{roll3=[[[[{[[@{numberofdice}-2]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{numberofdice}-3]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{numberofdice}-4]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{numberofdice}-5]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{numberofdice}-6]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{numberofdice}-7]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{numberofdice}-8]],1}kl1]]d6]]}} {{roll10=[[[[{[[@{numberofdice}-9]],1}kl1]]d6]]}} {{roll11=[[[[{[[@{numberofdice}-10]],1}kl1]]d6]]}} {{roll12=[[[[{[[@{numberofdice}-11]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-(@{numberofdice})]],1}kl1]]d6]], [[[[{[[1-(@{numberofdice})]],1}kl1]]d6]]}} {{notes=@{notes_query}}} @{title_text}' data-i18n="roll_fortune">Roll Fortune</button>
 	</div>
 	<div class="sheet-factions sheet-flex">
+		
+
 		<div class="sheet-col24b sheet-white-repcontrol">
 			<div class="sheet-factions-header sheet-flex sheet-uppercase">
-				<input type="text" spellcheck="false" name="attr_factions1_header" class="sheet-faction-name sheet-label" value="Underworld">
+				<input type="text" spellcheck="false" name="attr_factions1_header" class="sheet-faction-name sheet-label" value="Pelican Rock">
 				<span class="sheet-faction-tier" data-i18n="tier">Tier</span>
 				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
 				<span class="sheet-faction-status" data-i18n="status">Status</span>
 			</div>
 			<fieldset class="repeating_factions1">
-				<div class="sheet-faction">
-					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
-					<span></span>
-					<input type="text" spellcheck="false" class="sheet-faction-name" name="attr_name">
-					<input type="text" spellcheck="false" class="sheet-faction-tier" name="attr_tier">
-					<input type="text" spellcheck="false" class="sheet-faction-hold" name="attr_hold">
-					<input type="number" class="sheet-faction-status" name="attr_status">
-					<textarea spellcheck="false" name="attr_notes" data-i18n-placeholder="faction_notes" placeholder="Faction notes"></textarea>
-				</div>
-			</fieldset>
-		</div>
-		<div class="sheet-col24b sheet-white-repcontrol">
-			<div class="sheet-factions-header sheet-flex sheet-uppercase">
-				<input type="text" spellcheck="false" name="attr_factions2_header" class="sheet-faction-name sheet-label" value="Institutions">
-				<span class="sheet-faction-tier" data-i18n="tier">Tier</span>
-				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
-				<span class="sheet-faction-status" data-i18n="status">Status</span>
-			</div>
-			<fieldset class="repeating_factions2">
-				<div class="sheet-faction">
-					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
-					<span></span>
-					<input type="text" spellcheck="false" class="sheet-faction-name" name="attr_name">
-					<input type="text" spellcheck="false" class="sheet-faction-tier" name="attr_tier">
-					<input type="text" spellcheck="false" class="sheet-faction-hold" name="attr_hold">
-					<input type="number" class="sheet-faction-status" name="attr_status">
-					<textarea spellcheck="false" name="attr_notes" data-i18n-placeholder="faction_notes" placeholder="Faction notes"></textarea>
-				</div>
-			</fieldset>
-		</div>
-		<div class="sheet-col24b sheet-white-repcontrol">
-			<div class="sheet-factions-header sheet-flex sheet-uppercase">
-				<input type="text" spellcheck="false" name="attr_factions3_header" class="sheet-faction-name sheet-label" value="Labor &amp; Trade">
-				<span class="sheet-faction-tier" data-i18n="tier">Tier</span>
-				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
-				<span class="sheet-faction-status" data-i18n="status">Status</span>
-			</div>
-			<fieldset class="repeating_factions3">
-				<div class="sheet-faction">
-					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
-					<span></span>
-					<input type="text" spellcheck="false" class="sheet-faction-name" name="attr_name">
-					<input type="text" spellcheck="false" class="sheet-faction-tier" name="attr_tier">
-					<input type="text" spellcheck="false" class="sheet-faction-hold" name="attr_hold">
-					<input type="number" class="sheet-faction-status" name="attr_status">
-					<textarea spellcheck="false" name="attr_notes" data-i18n-placeholder="faction_notes" placeholder="Faction notes"></textarea>
-				</div>
-			</fieldset>
-			<div class="sheet-factions-header sheet-flex sheet-uppercase sheet-def-margin">
-				<input type="text" spellcheck="false" name="attr_factions4_header" class="sheet-faction-name sheet-label" value="The Fringe">
-				<span class="sheet-faction-tier" data-i18n="tier">Tier</span>
-				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
-				<span class="sheet-faction-status" data-i18n="status">Status</span>
-			</div>
-			<fieldset class="repeating_factions4">
-				<div class="sheet-faction">
-					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
-					<span></span>
-					<input type="text" spellcheck="false" class="sheet-faction-name" name="attr_name">
-					<input type="text" spellcheck="false" class="sheet-faction-tier" name="attr_tier">
-					<input type="text" spellcheck="false" class="sheet-faction-hold" name="attr_hold">
-					<input type="number" class="sheet-faction-status" name="attr_status">
-					<textarea spellcheck="false" name="attr_notes" data-i18n-placeholder="faction_notes" placeholder="Faction notes"></textarea>
-				</div>
-			</fieldset>
-		</div>
-		<div class="sheet-col24b sheet-white-repcontrol">
-			<div class="sheet-factions-header sheet-flex sheet-uppercase">
-				<input type="text" spellcheck="false" name="attr_factions5_header" class="sheet-faction-name sheet-label" value="Citizenry">
-				<span class="sheet-faction-tier" data-i18n="tier">Tier</span>
-				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
-				<span class="sheet-faction-status" data-i18n="status">Status</span>
-			</div>
-			<fieldset class="repeating_factions5">
 				<div class="sheet-faction">
 					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
 					<span></span>
@@ -114,6 +42,119 @@
 					<li data-i18n="warblurb5">Your claims which generate coin (vice dens, fighting pits, fences, etc.) produce only half their normal income (round down).</li>
 				</ul>
 			</div>
+		</div>
+
+
+		<div class="sheet-col24b sheet-white-repcontrol">
+			<div class="sheet-factions-header sheet-flex sheet-uppercase">
+				<input type="text" spellcheck="false" name="attr_factions2_header" class="sheet-faction-name sheet-label" value="Valdesia">
+				<span class="sheet-faction-tier" data-i18n="tier">Tier</span>
+				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
+				<span class="sheet-faction-status" data-i18n="status">Status</span>
+			</div>
+			<fieldset class="repeating_factions2">
+				<div class="sheet-faction">
+					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
+					<span></span>
+					<input type="text" spellcheck="false" class="sheet-faction-name" name="attr_name">
+					<input type="text" spellcheck="false" class="sheet-faction-tier" name="attr_tier">
+					<input type="text" spellcheck="false" class="sheet-faction-hold" name="attr_hold">
+					<input type="number" class="sheet-faction-status" name="attr_status">
+					<textarea spellcheck="false" name="attr_notes" data-i18n-placeholder="faction_notes" placeholder="Faction notes"></textarea>
+				</div>
+			</fieldset>
+			<div class="sheet-factions-header sheet-flex sheet-uppercase sheet-def-margin">
+				<input type="text" spellcheck="false" name="attr_factions3_header" class="sheet-faction-name sheet-label" value="Flotsam">
+				<span class="sheet-faction-tier" data-i18n="tier">Tier</span>
+				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
+				<span class="sheet-faction-status" data-i18n="status">Status</span>
+			</div>
+			<fieldset class="repeating_factions3">
+				<div class="sheet-faction">
+					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
+					<span></span>
+					<input type="text" spellcheck="false" class="sheet-faction-name" name="attr_name">
+					<input type="text" spellcheck="false" class="sheet-faction-tier" name="attr_tier">
+					<input type="text" spellcheck="false" class="sheet-faction-hold" name="attr_hold">
+					<input type="number" class="sheet-faction-status" name="attr_status">
+					<textarea spellcheck="false" name="attr_notes" data-i18n-placeholder="faction_notes" placeholder="Faction notes"></textarea>
+				</div>
+			</fieldset>
+			
+		</div>
+		
+
+		<div class="sheet-col24b sheet-white-repcontrol">
+			<div class="sheet-factions-header sheet-flex sheet-uppercase">
+				<input type="text" spellcheck="false" name="attr_factions4_header" class="sheet-faction-name sheet-label" value="Revelle">
+				<span class="sheet-faction-tier" data-i18n="tier">Tier</span>
+				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
+				<span class="sheet-faction-status" data-i18n="status">Status</span>
+			</div>
+			<fieldset class="repeating_factions4">
+				<div class="sheet-faction">
+					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
+					<span></span>
+					<input type="text" spellcheck="false" class="sheet-faction-name" name="attr_name">
+					<input type="text" spellcheck="false" class="sheet-faction-tier" name="attr_tier">
+					<input type="text" spellcheck="false" class="sheet-faction-hold" name="attr_hold">
+					<input type="number" class="sheet-faction-status" name="attr_status">
+					<textarea spellcheck="false" name="attr_notes" data-i18n-placeholder="faction_notes" placeholder="Faction notes"></textarea>
+				</div>
+			</fieldset>
+			<div class="sheet-factions-header sheet-flex sheet-uppercase  sheet-def-margin">
+				<input type="text" spellcheck="false" name="attr_factions5_header" class="sheet-faction-name sheet-label" value="Occult">
+				<span class="sheet-faction-tier" data-i18n="tier">Tier</span>
+				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
+				<span class="sheet-faction-status" data-i18n="status">Status</span>
+			</div>
+			<fieldset class="repeating_factions5">
+				<div class="sheet-faction">
+					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
+					<span></span>
+					<input type="text" spellcheck="false" class="sheet-faction-name" name="attr_name">
+					<input type="text" spellcheck="false" class="sheet-faction-tier" name="attr_tier">
+					<input type="text" spellcheck="false" class="sheet-faction-hold" name="attr_hold">
+					<input type="number" class="sheet-faction-status" name="attr_status">
+					<textarea spellcheck="false" name="attr_notes" data-i18n-placeholder="faction_notes" placeholder="Faction notes"></textarea>
+				</div>
+			</fieldset>
+		</div>
+		<div class="sheet-col24b sheet-white-repcontrol">
+			<div class="sheet-factions-header sheet-flex sheet-uppercase">
+				<input type="text" spellcheck="false" name="attr_factions6_header" class="sheet-faction-name sheet-label" value="Sallice">
+				<span class="sheet-faction-tier" data-i18n="tier">Tier</span>
+				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
+				<span class="sheet-faction-status" data-i18n="status">Status</span>
+			</div>
+			<fieldset class="repeating_factions6">
+				<div class="sheet-faction">
+					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
+					<span></span>
+					<input type="text" spellcheck="false" class="sheet-faction-name" name="attr_name">
+					<input type="text" spellcheck="false" class="sheet-faction-tier" name="attr_tier">
+					<input type="text" spellcheck="false" class="sheet-faction-hold" name="attr_hold">
+					<input type="number" class="sheet-faction-status" name="attr_status">
+					<textarea spellcheck="false" name="attr_notes" data-i18n-placeholder="faction_notes" placeholder="Faction notes"></textarea>
+				</div>
+			</fieldset>
+			<div class="sheet-factions-header sheet-flex sheet-uppercase sheet-def-margin">
+				<input type="text" spellcheck="false" name="attr_factions7_header" class="sheet-faction-name sheet-label" value="Outcasts">
+				<span class="sheet-faction-tier" data-i18n="tier">Tier</span>
+				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
+				<span class="sheet-faction-status" data-i18n="status">Status</span>
+			</div>
+			<fieldset class="repeating_factions7">
+				<div class="sheet-faction">
+					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
+					<span></span>
+					<input type="text" spellcheck="false" class="sheet-faction-name" name="attr_name">
+					<input type="text" spellcheck="false" class="sheet-faction-tier" name="attr_tier">
+					<input type="text" spellcheck="false" class="sheet-faction-hold" name="attr_hold">
+					<input type="number" class="sheet-faction-status" name="attr_status">
+					<textarea spellcheck="false" name="attr_notes" data-i18n-placeholder="faction_notes" placeholder="Faction notes"></textarea>
+				</div>
+			</fieldset>
 		</div>
 	</div>
 	<div class="sheet-clocks sheet-col55 sheet-white-repcontrol">
