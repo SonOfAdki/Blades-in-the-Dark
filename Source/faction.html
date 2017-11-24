@@ -21,6 +21,57 @@
 				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
 				<span class="sheet-faction-status" data-i18n="status">Status</span>
 			</div>
+
+			<!-- Heat -->
+			<div class="sheet-col100 sheet-flex sheet-heat"> <!-- was sheet-col45-->
+				<!-- Heat markers -->
+				<div class="sheet-heat1 sheet-blackheader">
+					<div class="sheet-label"><span name="attr_setting_heat_label"></span></div>
+				</div>
+				<div class="sheet-heat2 sheet-blackborder sheet-flex">
+					<input type="hidden" name="attr_heat_max" value="9">
+					<input type="radio" name="attr_heat1" class="sheet-tooth sheet-zero" value="0" checked>
+					<span></span>
+					<input type="radio" name="attr_heat1" class="sheet-tooth sheet-stresstooth" value="1">
+					<span></span>
+					<input type="radio" name="attr_heat1" class="sheet-tooth sheet-stresstooth" value="2">
+					<span></span>
+					<input type="radio" name="attr_heat1" class="sheet-tooth sheet-stresstooth" value="3">
+					<span></span>
+					<input type="radio" name="attr_heat1" class="sheet-tooth sheet-stresstooth" value="4">
+					<span></span>
+					<input type="radio" name="attr_heat1" class="sheet-tooth sheet-stresstooth" value="5">
+					<span></span>
+					<input type="radio" name="attr_heat1" class="sheet-tooth sheet-stresstooth" value="6">
+					<span></span>
+					<input type="radio" name="attr_heat1" class="sheet-tooth sheet-stresstooth" value="7">
+					<span></span>
+					<input type="radio" name="attr_heat1" class="sheet-tooth sheet-stresstooth" value="8">
+					<span></span>
+					<input type="radio" name="attr_heat1" class="sheet-tooth sheet-stresstooth" value="9">
+					<span></span>
+				</div>
+				<!-- Wanted Level-->
+				<div class="sheet-heat3">
+					<div class="sheet-blackheader">
+						<button type="roll" name="roll_Wanted" class="sheet-label sheet-rollbutton sheet-inherit" value='&{template:bitd} {{charname=@{character_name}}} {{vice=1}} {{short=1}} {{title-entanglement=1}} {{title=^{entanglement}}} {{subtitle=^{wantedroll1}@{heat1}&nbsp;@{setting_heat_label}^{wantedroll2}}} {{roll1=[[[[{[[@{wanted1}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{wanted1}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{wanted1}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{wanted1}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{wanted1}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{wanted1}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{wanted1}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{wanted1}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{wanted1}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{roll10=[[[[{[[@{wanted1}+@{bonusdice}-9}]],1}kl1]]d6]]}} {{roll11=[[[[{[[@{wanted1}+@{bonusdice}-10}]],1}kl1]]d6]]}} {{roll12=[[[[{[[@{wanted1}+@{bonusdice}-11}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{wanted1}-(@{bonusdice})]],1}kl1]]d6]], [[[[{[[1-@{wanted1}-(@{bonusdice})]],1}kl1]]d6]]}} @{title_text}'><span name="attr_setting_wanted_label"></span></button>
+					</div>
+					<div class="sheet-wantedholder sheet-flex">
+						<input type="hidden" name="attr_wanted_max" value="1"> <!-- was 4 -->
+						<input type="radio" name="attr_wanted1" class="sheet-tooth sheet-zero" value="0" checked>
+						<span></span>
+						<input type="radio" name="attr_wanted1" class="sheet-tooth sheet-regulartooth" value="1">
+						<span></span> <!--
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="2">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="3">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="4">
+						<span></span> -->
+					</div>
+				</div>
+			</div>
+
 			<fieldset class="repeating_factions1">
 				<div class="sheet-faction">
 					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
@@ -52,6 +103,57 @@
 				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
 				<span class="sheet-faction-status" data-i18n="status">Status</span>
 			</div>
+
+			<!-- Heat -->
+			<div class="sheet-col100 sheet-flex sheet-heat"> <!-- was sheet-col45-->
+				<!-- Heat markers -->
+				<div class="sheet-heat1 sheet-blackheader">
+					<div class="sheet-label"><span name="attr_setting_heat_label"></span></div>
+				</div>
+				<div class="sheet-heat2 sheet-blackborder sheet-flex">
+					<input type="hidden" name="attr_heat_max" value="9">
+					<input type="radio" name="attr_heat2" class="sheet-tooth sheet-zero" value="0" checked>
+					<span></span>
+					<input type="radio" name="attr_heat2" class="sheet-tooth sheet-stresstooth" value="1">
+					<span></span>
+					<input type="radio" name="attr_heat2" class="sheet-tooth sheet-stresstooth" value="2">
+					<span></span>
+					<input type="radio" name="attr_heat2" class="sheet-tooth sheet-stresstooth" value="3">
+					<span></span>
+					<input type="radio" name="attr_heat2" class="sheet-tooth sheet-stresstooth" value="4">
+					<span></span>
+					<input type="radio" name="attr_heat2" class="sheet-tooth sheet-stresstooth" value="5">
+					<span></span>
+					<input type="radio" name="attr_heat2" class="sheet-tooth sheet-stresstooth" value="6">
+					<span></span>
+					<input type="radio" name="attr_heat2" class="sheet-tooth sheet-stresstooth" value="7">
+					<span></span>
+					<input type="radio" name="attr_heat2" class="sheet-tooth sheet-stresstooth" value="8">
+					<span></span>
+					<input type="radio" name="attr_heat2" class="sheet-tooth sheet-stresstooth" value="9">
+					<span></span>
+				</div>
+				<!-- Wanted Level-->
+				<div class="sheet-heat3">
+					<div class="sheet-blackheader">
+						<button type="roll" name="roll_Wanted" class="sheet-label sheet-rollbutton sheet-inherit" value='&{template:bitd} {{charname=@{character_name}}} {{vice=1}} {{short=1}} {{title-entanglement=1}} {{title=^{entanglement}}} {{subtitle=^{wantedroll1}@{heat2}&nbsp;@{setting_heat_label}^{wantedroll2}}} {{roll1=[[[[{[[@{wanted2}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{wanted2}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{wanted2}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{wanted2}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{wanted2}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{wanted2}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{wanted2}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{wanted2}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{wanted2}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{roll10=[[[[{[[@{wanted2}+@{bonusdice}-9}]],1}kl1]]d6]]}} {{roll11=[[[[{[[@{wanted2}+@{bonusdice}-10}]],1}kl1]]d6]]}} {{roll12=[[[[{[[@{wanted2}+@{bonusdice}-11}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{wanted2}-(@{bonusdice})]],1}kl1]]d6]], [[[[{[[1-@{wanted2}-(@{bonusdice})]],1}kl1]]d6]]}} @{title_text}'><span name="attr_setting_wanted_label"></span></button>
+					</div>
+					<div class="sheet-wantedholder sheet-flex">
+						<input type="hidden" name="attr_wanted_max" value="1"> <!-- was 4 -->
+						<input type="radio" name="attr_wanted2" class="sheet-tooth sheet-zero" value="0" checked>
+						<span></span>
+						<input type="radio" name="attr_wanted2" class="sheet-tooth sheet-regulartooth" value="1">
+						<span></span> <!--
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="2">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="3">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="4">
+						<span></span> -->
+					</div>
+				</div>
+			</div>
+
 			<fieldset class="repeating_factions2">
 				<div class="sheet-faction">
 					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
@@ -69,6 +171,57 @@
 				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
 				<span class="sheet-faction-status" data-i18n="status">Status</span>
 			</div>
+
+			<!-- Heat -->
+			<div class="sheet-col100 sheet-flex sheet-heat"> <!-- was sheet-col45-->
+				<!-- Heat markers -->
+				<div class="sheet-heat1 sheet-blackheader">
+					<div class="sheet-label"><span name="attr_setting_heat_label"></span></div>
+				</div>
+				<div class="sheet-heat2 sheet-blackborder sheet-flex">
+					<input type="hidden" name="attr_heat_max" value="9">
+					<input type="radio" name="attr_heat3" class="sheet-tooth sheet-zero" value="0" checked>
+					<span></span>
+					<input type="radio" name="attr_heat3" class="sheet-tooth sheet-stresstooth" value="1">
+					<span></span>
+					<input type="radio" name="attr_heat3" class="sheet-tooth sheet-stresstooth" value="2">
+					<span></span>
+					<input type="radio" name="attr_heat3" class="sheet-tooth sheet-stresstooth" value="3">
+					<span></span>
+					<input type="radio" name="attr_heat3" class="sheet-tooth sheet-stresstooth" value="4">
+					<span></span>
+					<input type="radio" name="attr_heat3" class="sheet-tooth sheet-stresstooth" value="5">
+					<span></span>
+					<input type="radio" name="attr_heat3" class="sheet-tooth sheet-stresstooth" value="6">
+					<span></span>
+					<input type="radio" name="attr_heat3" class="sheet-tooth sheet-stresstooth" value="7">
+					<span></span>
+					<input type="radio" name="attr_heat3" class="sheet-tooth sheet-stresstooth" value="8">
+					<span></span>
+					<input type="radio" name="attr_heat3" class="sheet-tooth sheet-stresstooth" value="9">
+					<span></span>
+				</div>
+				<!-- Wanted Level-->
+				<div class="sheet-heat3">
+					<div class="sheet-blackheader">
+						<button type="roll" name="roll_Wanted" class="sheet-label sheet-rollbutton sheet-inherit" value='&{template:bitd} {{charname=@{character_name}}} {{vice=1}} {{short=1}} {{title-entanglement=1}} {{title=^{entanglement}}} {{subtitle=^{wantedroll1}@{heat3}&nbsp;@{setting_heat_label}^{wantedroll2}}} {{roll1=[[[[{[[@{wanted3}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{wanted3}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{wanted3}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{wanted3}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{wanted3}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{wanted3}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{wanted3}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{wanted3}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{wanted3}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{roll10=[[[[{[[@{wanted3}+@{bonusdice}-9}]],1}kl1]]d6]]}} {{roll11=[[[[{[[@{wanted3}+@{bonusdice}-10}]],1}kl1]]d6]]}} {{roll12=[[[[{[[@{wanted3}+@{bonusdice}-11}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{wanted3}-(@{bonusdice})]],1}kl1]]d6]], [[[[{[[1-@{wanted3}-(@{bonusdice})]],1}kl1]]d6]]}} @{title_text}'><span name="attr_setting_wanted_label"></span></button>
+					</div>
+					<div class="sheet-wantedholder sheet-flex">
+						<input type="hidden" name="attr_wanted_max" value="1"> <!-- was 4 -->
+						<input type="radio" name="attr_wanted3" class="sheet-tooth sheet-zero" value="0" checked>
+						<span></span>
+						<input type="radio" name="attr_wanted3" class="sheet-tooth sheet-regulartooth" value="1">
+						<span></span> <!--
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="2">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="3">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="4">
+						<span></span> -->
+					</div>
+				</div>
+			</div>
+
 			<fieldset class="repeating_factions3">
 				<div class="sheet-faction">
 					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
@@ -91,6 +244,57 @@
 				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
 				<span class="sheet-faction-status" data-i18n="status">Status</span>
 			</div>
+
+			<!-- Heat -->
+			<div class="sheet-col100 sheet-flex sheet-heat"> <!-- was sheet-col45-->
+				<!-- Heat markers -->
+				<div class="sheet-heat1 sheet-blackheader">
+					<div class="sheet-label"><span name="attr_setting_heat_label"></span></div>
+				</div>
+				<div class="sheet-heat2 sheet-blackborder sheet-flex">
+					<input type="hidden" name="attr_heat_max" value="9">
+					<input type="radio" name="attr_heat4" class="sheet-tooth sheet-zero" value="0" checked>
+					<span></span>
+					<input type="radio" name="attr_heat4" class="sheet-tooth sheet-stresstooth" value="1">
+					<span></span>
+					<input type="radio" name="attr_heat4" class="sheet-tooth sheet-stresstooth" value="2">
+					<span></span>
+					<input type="radio" name="attr_heat4" class="sheet-tooth sheet-stresstooth" value="3">
+					<span></span>
+					<input type="radio" name="attr_heat4" class="sheet-tooth sheet-stresstooth" value="4">
+					<span></span>
+					<input type="radio" name="attr_heat4" class="sheet-tooth sheet-stresstooth" value="5">
+					<span></span>
+					<input type="radio" name="attr_heat4" class="sheet-tooth sheet-stresstooth" value="6">
+					<span></span>
+					<input type="radio" name="attr_heat4" class="sheet-tooth sheet-stresstooth" value="7">
+					<span></span>
+					<input type="radio" name="attr_heat4" class="sheet-tooth sheet-stresstooth" value="8">
+					<span></span>
+					<input type="radio" name="attr_heat4" class="sheet-tooth sheet-stresstooth" value="9">
+					<span></span>
+				</div>
+				<!-- Wanted Level-->
+				<div class="sheet-heat3">
+					<div class="sheet-blackheader">
+						<button type="roll" name="roll_Wanted" class="sheet-label sheet-rollbutton sheet-inherit" value='&{template:bitd} {{charname=@{character_name}}} {{vice=1}} {{short=1}} {{title-entanglement=1}} {{title=^{entanglement}}} {{subtitle=^{wantedroll1}@{heat4}&nbsp;@{setting_heat_label}^{wantedroll2}}} {{roll1=[[[[{[[@{wanted4}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{wanted4}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{wanted4}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{wanted4}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{wanted4}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{wanted4}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{wanted4}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{wanted4}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{wanted4}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{roll10=[[[[{[[@{wanted4}+@{bonusdice}-9}]],1}kl1]]d6]]}} {{roll11=[[[[{[[@{wanted4}+@{bonusdice}-10}]],1}kl1]]d6]]}} {{roll12=[[[[{[[@{wanted4}+@{bonusdice}-11}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{wanted4}-(@{bonusdice})]],1}kl1]]d6]], [[[[{[[1-@{wanted4}-(@{bonusdice})]],1}kl1]]d6]]}} @{title_text}'><span name="attr_setting_wanted_label"></span></button>
+					</div>
+					<div class="sheet-wantedholder sheet-flex">
+						<input type="hidden" name="attr_wanted_max" value="1"> <!-- was 4 -->
+						<input type="radio" name="attr_wanted4" class="sheet-tooth sheet-zero" value="0" checked>
+						<span></span>
+						<input type="radio" name="attr_wanted4" class="sheet-tooth sheet-regulartooth" value="1">
+						<span></span> <!--
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="2">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="3">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="4">
+						<span></span> -->
+					</div>
+				</div>
+			</div>
+
 			<fieldset class="repeating_factions4">
 				<div class="sheet-faction">
 					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
@@ -108,6 +312,57 @@
 				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
 				<span class="sheet-faction-status" data-i18n="status">Status</span>
 			</div>
+
+			<!-- Heat -->
+			<div class="sheet-col100 sheet-flex sheet-heat"> <!-- was sheet-col45-->
+				<!-- Heat markers -->
+				<div class="sheet-heat1 sheet-blackheader">
+					<div class="sheet-label"><span name="attr_setting_heat_label"></span></div>
+				</div>
+				<div class="sheet-heat2 sheet-blackborder sheet-flex">
+					<input type="hidden" name="attr_heat_max" value="9">
+					<input type="radio" name="attr_heat5" class="sheet-tooth sheet-zero" value="0" checked>
+					<span></span>
+					<input type="radio" name="attr_heat5" class="sheet-tooth sheet-stresstooth" value="1">
+					<span></span>
+					<input type="radio" name="attr_heat5" class="sheet-tooth sheet-stresstooth" value="2">
+					<span></span>
+					<input type="radio" name="attr_heat5" class="sheet-tooth sheet-stresstooth" value="3">
+					<span></span>
+					<input type="radio" name="attr_heat5" class="sheet-tooth sheet-stresstooth" value="4">
+					<span></span>
+					<input type="radio" name="attr_heat5" class="sheet-tooth sheet-stresstooth" value="5">
+					<span></span>
+					<input type="radio" name="attr_heat5" class="sheet-tooth sheet-stresstooth" value="6">
+					<span></span>
+					<input type="radio" name="attr_heat5" class="sheet-tooth sheet-stresstooth" value="7">
+					<span></span>
+					<input type="radio" name="attr_heat5" class="sheet-tooth sheet-stresstooth" value="8">
+					<span></span>
+					<input type="radio" name="attr_heat5" class="sheet-tooth sheet-stresstooth" value="9">
+					<span></span>
+				</div>
+				<!-- Wanted Level-->
+				<div class="sheet-heat3">
+					<div class="sheet-blackheader">
+						<button type="roll" name="roll_Wanted" class="sheet-label sheet-rollbutton sheet-inherit" value='&{template:bitd} {{charname=@{character_name}}} {{vice=1}} {{short=1}} {{title-entanglement=1}} {{title=^{entanglement}}} {{subtitle=^{wantedroll1}@{heat5}&nbsp;@{setting_heat_label}^{wantedroll2}}} {{roll1=[[[[{[[@{wanted5}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{wanted5}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{wanted5}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{wanted5}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{wanted5}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{wanted5}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{wanted5}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{wanted5}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{wanted5}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{roll10=[[[[{[[@{wanted5}+@{bonusdice}-9}]],1}kl1]]d6]]}} {{roll11=[[[[{[[@{wanted5}+@{bonusdice}-10}]],1}kl1]]d6]]}} {{roll12=[[[[{[[@{wanted5}+@{bonusdice}-11}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{wanted5}-(@{bonusdice})]],1}kl1]]d6]], [[[[{[[1-@{wanted2}-(@{bonusdice})]],1}kl1]]d6]]}} @{title_text}'><span name="attr_setting_wanted_label"></span></button>
+					</div>
+					<div class="sheet-wantedholder sheet-flex">
+						<input type="hidden" name="attr_wanted_max" value="1"> <!-- was 4 -->
+						<input type="radio" name="attr_wanted5" class="sheet-tooth sheet-zero" value="0" checked>
+						<span></span>
+						<input type="radio" name="attr_wanted5" class="sheet-tooth sheet-regulartooth" value="1">
+						<span></span> <!--
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="2">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="3">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="4">
+						<span></span> -->
+					</div>
+				</div>
+			</div>
+
 			<fieldset class="repeating_factions5">
 				<div class="sheet-faction">
 					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
@@ -127,6 +382,57 @@
 				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
 				<span class="sheet-faction-status" data-i18n="status">Status</span>
 			</div>
+
+			<!-- Heat -->
+			<div class="sheet-col100 sheet-flex sheet-heat"> <!-- was sheet-col45-->
+				<!-- Heat markers -->
+				<div class="sheet-heat1 sheet-blackheader">
+					<div class="sheet-label"><span name="attr_setting_heat_label"></span></div>
+				</div>
+				<div class="sheet-heat2 sheet-blackborder sheet-flex">
+					<input type="hidden" name="attr_heat_max" value="9">
+					<input type="radio" name="attr_heat6" class="sheet-tooth sheet-zero" value="0" checked>
+					<span></span>
+					<input type="radio" name="attr_heat6" class="sheet-tooth sheet-stresstooth" value="1">
+					<span></span>
+					<input type="radio" name="attr_heat6" class="sheet-tooth sheet-stresstooth" value="2">
+					<span></span>
+					<input type="radio" name="attr_heat6" class="sheet-tooth sheet-stresstooth" value="3">
+					<span></span>
+					<input type="radio" name="attr_heat6" class="sheet-tooth sheet-stresstooth" value="4">
+					<span></span>
+					<input type="radio" name="attr_heat6" class="sheet-tooth sheet-stresstooth" value="5">
+					<span></span>
+					<input type="radio" name="attr_heat6" class="sheet-tooth sheet-stresstooth" value="6">
+					<span></span>
+					<input type="radio" name="attr_heat6" class="sheet-tooth sheet-stresstooth" value="7">
+					<span></span>
+					<input type="radio" name="attr_heat6" class="sheet-tooth sheet-stresstooth" value="8">
+					<span></span>
+					<input type="radio" name="attr_heat6" class="sheet-tooth sheet-stresstooth" value="9">
+					<span></span>
+				</div>
+				<!-- Wanted Level-->
+				<div class="sheet-heat3">
+					<div class="sheet-blackheader">
+						<button type="roll" name="roll_Wanted" class="sheet-label sheet-rollbutton sheet-inherit" value='&{template:bitd} {{charname=@{character_name}}} {{vice=1}} {{short=1}} {{title-entanglement=1}} {{title=^{entanglement}}} {{subtitle=^{wantedroll1}@{heat6}&nbsp;@{setting_heat_label}^{wantedroll2}}} {{roll1=[[[[{[[@{wanted6}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{wanted6}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{wanted6}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{wanted6}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{wanted6}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{wanted6}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{wanted6}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{wanted6}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{wanted6}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{roll10=[[[[{[[@{wanted6}+@{bonusdice}-9}]],1}kl1]]d6]]}} {{roll11=[[[[{[[@{wanted6}+@{bonusdice}-10}]],1}kl1]]d6]]}} {{roll12=[[[[{[[@{wanted6}+@{bonusdice}-11}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{wanted6}-(@{bonusdice})]],1}kl1]]d6]], [[[[{[[1-@{wanted2}-(@{bonusdice})]],1}kl1]]d6]]}} @{title_text}'><span name="attr_setting_wanted_label"></span></button>
+					</div>
+					<div class="sheet-wantedholder sheet-flex">
+						<input type="hidden" name="attr_wanted_max" value="1"> <!-- was 4 -->
+						<input type="radio" name="attr_wanted6" class="sheet-tooth sheet-zero" value="0" checked>
+						<span></span>
+						<input type="radio" name="attr_wanted6" class="sheet-tooth sheet-regulartooth" value="1">
+						<span></span> <!--
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="2">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="3">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="4">
+						<span></span> -->
+					</div>
+				</div>
+			</div>
+
 			<fieldset class="repeating_factions6">
 				<div class="sheet-faction">
 					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
@@ -144,6 +450,57 @@
 				<span class="sheet-faction-hold" data-i18n="hold">Hold</span>
 				<span class="sheet-faction-status" data-i18n="status">Status</span>
 			</div>
+
+			<!-- Heat -->
+			<div class="sheet-col100 sheet-flex sheet-heat"> <!-- was sheet-col45-->
+				<!-- Heat markers -->
+				<div class="sheet-heat1 sheet-blackheader">
+					<div class="sheet-label"><span name="attr_setting_heat_label"></span></div>
+				</div>
+				<div class="sheet-heat2 sheet-blackborder sheet-flex">
+					<input type="hidden" name="attr_heat_max" value="9">
+					<input type="radio" name="attr_heat7" class="sheet-tooth sheet-zero" value="0" checked>
+					<span></span>
+					<input type="radio" name="attr_heat7" class="sheet-tooth sheet-stresstooth" value="1">
+					<span></span>
+					<input type="radio" name="attr_heat7" class="sheet-tooth sheet-stresstooth" value="2">
+					<span></span>
+					<input type="radio" name="attr_heat7" class="sheet-tooth sheet-stresstooth" value="3">
+					<span></span>
+					<input type="radio" name="attr_heat7" class="sheet-tooth sheet-stresstooth" value="4">
+					<span></span>
+					<input type="radio" name="attr_heat7" class="sheet-tooth sheet-stresstooth" value="5">
+					<span></span>
+					<input type="radio" name="attr_heat7" class="sheet-tooth sheet-stresstooth" value="6">
+					<span></span>
+					<input type="radio" name="attr_heat7" class="sheet-tooth sheet-stresstooth" value="7">
+					<span></span>
+					<input type="radio" name="attr_heat7" class="sheet-tooth sheet-stresstooth" value="8">
+					<span></span>
+					<input type="radio" name="attr_heat7" class="sheet-tooth sheet-stresstooth" value="9">
+					<span></span>
+				</div>
+				<!-- Wanted Level-->
+				<div class="sheet-heat3">
+					<div class="sheet-blackheader">
+						<button type="roll" name="roll_Wanted" class="sheet-label sheet-rollbutton sheet-inherit" value='&{template:bitd} {{charname=@{character_name}}} {{vice=1}} {{short=1}} {{title-entanglement=1}} {{title=^{entanglement}}} {{subtitle=^{wantedroll1}@{heat7}&nbsp;@{setting_heat_label}^{wantedroll2}}} {{roll1=[[[[{[[@{wanted7}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{wanted7}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{wanted7}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{wanted7}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{wanted7}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{wanted7}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{wanted7}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{wanted7}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{wanted7}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{roll10=[[[[{[[@{wanted7}+@{bonusdice}-9}]],1}kl1]]d6]]}} {{roll11=[[[[{[[@{wanted7}+@{bonusdice}-10}]],1}kl1]]d6]]}} {{roll12=[[[[{[[@{wanted7}+@{bonusdice}-11}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{wanted7}-(@{bonusdice})]],1}kl1]]d6]], [[[[{[[1-@{wanted2}-(@{bonusdice})]],1}kl1]]d6]]}} @{title_text}'><span name="attr_setting_wanted_label"></span></button>
+					</div>
+					<div class="sheet-wantedholder sheet-flex">
+						<input type="hidden" name="attr_wanted_max" value="1"> <!-- was 4 -->
+						<input type="radio" name="attr_wanted7" class="sheet-tooth sheet-zero" value="0" checked>
+						<span></span>
+						<input type="radio" name="attr_wanted7" class="sheet-tooth sheet-regulartooth" value="1">
+						<span></span> <!--
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="2">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="3">
+						<span></span>
+						<input type="radio" name="attr_wanted" class="sheet-tooth sheet-regulartooth" value="4">
+						<span></span> -->
+					</div>
+				</div>
+			</div>
+
 			<fieldset class="repeating_factions7">
 				<div class="sheet-faction">
 					<input type="checkbox" name="attr_expand" class="sheet-expand" value="1">
@@ -157,6 +514,10 @@
 			</fieldset>
 		</div>
 	</div>
+
+	
+
+
 	<div class="sheet-clocks sheet-col55 sheet-white-repcontrol">
 		<div class="sheet-specialheader sheet-label" data-i18n="clocks">Clocks</div>
 		<fieldset class="repeating_factionclock">
